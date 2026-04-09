@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: dashboardservice
+
+server:
+  port: 8085
+
+eureka:
+  client:
+    enabled: false
