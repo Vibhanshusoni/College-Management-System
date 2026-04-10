@@ -60,6 +60,14 @@ public class GatewayConfig {
                         .filters(f -> f.filter(filter))
                         .uri("lb://Course-Service"))
 
+                .route("dashboard_swagger", r -> r.path("/api/dashboard/v3/api-docs")
+                        .filters(f -> f.rewritePath("/api/dashboard/v3/api-docs", "/v3/api-docs"))
+                        .uri("lb://Dashboard-Service"))
+
+                .route("dashboard_api", r -> r.path("/api/dashboard/**")
+                        .filters(f -> f.filter(filter))
+                        .uri("lb://Dashboard-Service"))
+
                 .build();
     }
 }

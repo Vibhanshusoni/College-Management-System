@@ -61,8 +61,9 @@ public class AuthFilter implements GatewayFilter, Ordered {
         try {
             String username = jwtUtil.extractUsername(token);
             String role = jwtUtil.extractRole(token);
+            String department = jwtUtil.extractDepartment(token);
 
-            log.info("Token validated. User: {}, Role: {}", username, role);
+            log.info("Token validated. User: {}, Role: {}, Department: {}", username, role, department);
 
             //  Reactive blacklist check (NO block)
             return webClientBuilder.build()
@@ -146,9 +147,10 @@ public class AuthFilter implements GatewayFilter, Ordered {
                             }
                         }
 
-                        //  STUDENT → Profile + own books (FIXED)
+                        //  STUDENT → Profile + own books + Dashboard
                         if (path.startsWith("/api/users/profile") ||
-                                path.startsWith("/api/library/my-books")) {
+                                path.startsWith("/api/library/my-books") ||
+                                path.startsWith("/api/dashboard/student")) {
 
                             if (!"STUDENT".equals(role) && !"ADMIN".equals(role)) {
                                 log.error("Access denied: Only STUDENT or ADMIN allowed");
@@ -156,9 +158,10 @@ public class AuthFilter implements GatewayFilter, Ordered {
                             }
                         }
 
-                        //  Pass username downstream
+                        //  Pass username and department downstream
                         ServerHttpRequest request = exchange.getRequest().mutate()
                                 .header("X-User-Name", username)
+                                .header("X-User-Department", department)
                                 .build();
 
                         log.info("Request authorized for user {}", username);

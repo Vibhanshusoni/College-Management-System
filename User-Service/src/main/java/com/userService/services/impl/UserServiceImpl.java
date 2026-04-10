@@ -3,6 +3,7 @@ package com.userService.services.impl;
 import com.userService.dto.UpdatePasswordDto;
 import com.userService.dto.UserDto;
 import com.userService.entity.UserEntity;
+import com.userService.enums.Role;
 import com.userService.exception.*;
 import com.userService.exception.IllegalArgumentException;
 import com.userService.repository.UserRepository;
@@ -39,7 +40,11 @@ public class UserServiceImpl implements UserService {
             throw new IllegalArgumentException("Email cannot be empty");
         }
 
+        //Password validation
         validatePassword(dto.getPassword());
+
+        // Role validation
+        validateRole(dto.getRole());
 
         // CHECK DUPLICATES
         if (repository.existsByUsername(dto.getUsername())) {
@@ -50,12 +55,14 @@ public class UserServiceImpl implements UserService {
             throw new DuplicateEmailException("Email already exists");
         }
 
+
         // CREATE ENTITY
         UserEntity emp = UserEntity.builder()
                 .username(dto.getUsername())
                 .email(dto.getEmail())
                 .password(passwordEncoder.encode(dto.getPassword()))
                 .role(dto.getRole() != null ? dto.getRole() : "USER")
+                .department(dto.getDepartment() != null ? dto.getDepartment() : "General")
                 .build();
 
         UserEntity saved = repository.save(emp);
@@ -65,10 +72,20 @@ public class UserServiceImpl implements UserService {
                 saved.getUsername(),
                 saved.getEmail(),
                 saved.getPassword(),
-                saved.getRole()
+                saved.getRole(),
+                saved.getDepartment()
         );
     }
 
+    //VALIDATE ROLE METHOD
+    private void validateRole(String role) {
+
+        try {
+            Role.valueOf(role.toUpperCase());
+        } catch (Exception e) {
+            throw new IllegalArgumentException("Invalid role. Allowed roles: ADMIN, FACULTY, STUDENT, LIBRARIAN");
+        }
+    }
 
     // PASSWORD VALIDATION METHOD
     private void validatePassword(String password) {
@@ -91,7 +108,7 @@ public class UserServiceImpl implements UserService {
         log.info("Fetching User {}", id);
         UserEntity emp = repository.findById(id)
                 .orElseThrow(() -> new UserNotFoundException("User not found"));
-        return new UserDto(emp.getId(), emp.getUsername(), emp.getEmail(), emp.getPassword(), emp.getRole());
+        return new UserDto(emp.getId(), emp.getUsername(), emp.getEmail(), emp.getPassword(), emp.getRole(), emp.getDepartment());
     }
 
     // Find by username
@@ -99,11 +116,11 @@ public class UserServiceImpl implements UserService {
         log.info("Finding user {}", username);
         UserEntity emp = repository.findByUsername(username)
                 .orElseThrow(() -> new UserNotFoundException("User not found"));
-        return new UserDto(emp.getId(), emp.getUsername(), emp.getEmail(), emp.getPassword(), emp.getRole());
+        return new UserDto(emp.getId(), emp.getUsername(), emp.getEmail(), emp.getPassword(), emp.getRole(), emp.getDepartment());
     }
 
     // Login
-@Override
+    @Override
     public UserDto login(String username, String password) {
         log.info("Validating user {}", username);
         UserEntity emp = repository.findByUsername(username)
@@ -115,7 +132,7 @@ public class UserServiceImpl implements UserService {
         }
 
         log.info("Login successful for {}", username);
-        return new UserDto(emp.getId(), emp.getUsername(), emp.getEmail(), emp.getPassword(), emp.getRole());
+        return new UserDto(emp.getId(), emp.getUsername(), emp.getEmail(), emp.getPassword(), emp.getRole(), emp.getDepartment());
     }
 
     @Override
@@ -147,6 +164,6 @@ public class UserServiceImpl implements UserService {
     public UserDto findByEmail(String email) {
         UserEntity emp = repository.findByEmail(email)
                 .orElseThrow(() -> new UserNotFoundException("User not found"));
-        return new UserDto(emp.getId(), emp.getUsername(), emp.getEmail(), emp.getPassword(), emp.getRole());
+        return new UserDto(emp.getId(), emp.getUsername(), emp.getEmail(), emp.getPassword(), emp.getRole(), emp.getDepartment());
     }
 }

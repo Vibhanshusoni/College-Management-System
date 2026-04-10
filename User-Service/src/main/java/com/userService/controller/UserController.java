@@ -52,7 +52,8 @@ public class UserController {
                                 e.getUsername(),
                                 e.getEmail(),
                                 e.getPassword(),
-                                e.getRole()))
+                                e.getRole(),
+                                e.getDepartment()))
                         .toList()
         );
     }

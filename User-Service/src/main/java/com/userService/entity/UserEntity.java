@@ -20,5 +20,8 @@ public class UserEntity {
     @Email
     private String email;
     private String password;
+    @Column(unique = true)
+    private String userId; // 12-digit unique ID
     private String role;
+    private String department;
 }

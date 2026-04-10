@@ -39,8 +39,21 @@ public class AuthServiceImpl implements AuthService {
                 username
         );
 
+        if (username == null || username.isBlank()) {
+            throw new InvalidCredentialsException("Username cannot be empty");
+        }
+
+        if (password == null || password.isBlank()) {
+            throw new InvalidCredentialsException("Password cannot be empty");
+        }
+
         if (user == null) {
             throw new UserNotFoundException("User not found");
+        }
+
+        if (user.getUsername() == null || !user.getUsername().equalsIgnoreCase(username)) {
+            log.warn("Username mismatch for requested username {}", username);
+            throw new InvalidCredentialsException("Invalid credentials");
         }
 
         if (!passwordEncoder.matches(password, user.getPassword())) {
@@ -49,7 +62,8 @@ public class AuthServiceImpl implements AuthService {
         }
 
         String role = user.getRole() != null ? user.getRole() : "USER";
-        String token = jwtUtil.generateToken(user.getUsername(), role);
+        String department = user.getDepartment() != null ? user.getDepartment() : "";
+        String token = jwtUtil.generateToken(user.getUsername(), role, department);
 
         return AuthResponse.builder()
                 .token(token)

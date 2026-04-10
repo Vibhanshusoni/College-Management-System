@@ -14,11 +14,11 @@ import jakarta.mail.internet.MimeMessage;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestTemplate;
 import org.thymeleaf.context.Context;
 import org.thymeleaf.spring6.SpringTemplateEngine;
@@ -52,7 +52,7 @@ public class PasswordServiceImpl implements PasswordService {
                     "http://User-Service/user/by-email?email=" + email,
                     UserDto.class
             );
-        } catch (HttpClientErrorException.NotFound ex) {
+        } catch (UserNotFoundException ex) {
             log.warn("User not found for email: {}", email);
             // user remains null, proceed accordingly
         }
@@ -306,7 +306,7 @@ public class PasswordServiceImpl implements PasswordService {
 
         } catch (Exception e) {
             log.error("Failed to send email to: {}", to, e);
-            throw new RuntimeException("Mail sending failed");
+            throw new RuntimeException("Mail sending failed", e);
         }
     }
 }

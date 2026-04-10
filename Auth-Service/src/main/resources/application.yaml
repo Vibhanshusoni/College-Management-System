@@ -4,9 +4,9 @@ spring:
   application:
     name: Auth-Service
   datasource:
-    url: jdbc:mysql://localhost:3306/user_service_db
+    url: jdbc:mysql://localhost:3306/auth_service_db
     username: root
-    password: Vivan@123
+    password: ${DB_PASSWORD:Vivan@123}
     driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
@@ -16,11 +16,15 @@ spring:
   mail:
     host: smtp.gmail.com
     port: 587
-    username: vibhanshusoniofficial@gmail.com
-    password: kqje dybt bbjr avls
+    username: ${MAIL_USERNAME:vibhanshusoniofficial@gmail.com}
+    password: ${MAIL_PASSWORD:kqje dybt bbjr avls}
     properties:
       mail.smtp.auth: true
       mail.smtp.starttls.enable: true
+
+jwt:
+  secret: ${JWT_SECRET:my-super-secret-key-that-is-at-least-32-characters-long!!}
+  expiration: ${JWT_EXPIRATION:86400000}
 
 eureka:
   client:
@@ -29,4 +33,9 @@ eureka:
 
   instance:
     prefer-ip-address: true
-    ip-address: 127.0.0.1
+    ip-address: 0.0.0.0
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html

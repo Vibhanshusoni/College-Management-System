@@ -20,4 +20,10 @@ eureka:
 
   instance:
     prefer-ip-address: true
-    ip-address: 127.0.0.1
+    ip-address: 0.0.0.0
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html

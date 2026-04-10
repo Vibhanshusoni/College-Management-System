@@ -1,10 +1,19 @@
 spring:
   application:
-    name: dashboardservice
+    name: Dashboard-Service
 
 server:
   port: 8085
 
 eureka:
   client:
-    enabled: false
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    prefer-ip-address: true
+    ip-address: 127.0.0.1
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
