@@ -12,6 +12,7 @@ spring:
           enabled: true
           lower-case-service-id: true
       routes:
+        # Auth Service
         - id: auth-service
           uri: lb://auth-service
           predicates:
@@ -19,6 +20,7 @@ spring:
           filters:
             - RewritePath=/api/auth/(?<path>.*), /${path}
 
+        # User Service
         - id: user-service
           uri: lb://user-service
           predicates:
@@ -26,6 +28,7 @@ spring:
           filters:
             - RewritePath=/api/users/(?<path>.*), /${path}
 
+        # Course Service
         - id: course-service
           uri: lb://courseservice
           predicates:
@@ -33,13 +36,23 @@ spring:
           filters:
             - RewritePath=/api/courses/(?<path>.*), /${path}
 
+        # Student Service
         - id: student-service
-          uri: lb://studentservice
+          uri: lb://student-service
           predicates:
             - Path=/api/students/**
           filters:
             - RewritePath=/api/students/(?<path>.*), /${path}
 
+        # Faculty Service
+        - id: faculty-service
+          uri: lb://faculty-service
+          predicates:
+            - Path=/api/faculty/**
+          filters:
+            - RewritePath=/api/faculty/(?<path>.*), /${path}
+
+        # Library Service
         - id: library-service
           uri: lb://libraryservice
           predicates:
@@ -47,54 +60,55 @@ spring:
           filters:
             - RewritePath=/api/library/(?<path>.*), /${path}
 
+        # Dashboard Service
         - id: dashboard-service
           uri: lb://dashboardservice
           predicates:
             - Path=/api/dashboard/**
           filters:
             - RewritePath=/api/dashboard/(?<path>.*), /${path}
+
       globalcors:
         add-to-simple-url-handler-mapping: true
         corsConfigurations:
           '[/**]':
             allowedOrigins:
               - "http://localhost:5173"
+              - "http://localhost:3000"
               - "http://192.168.1.7:5173"
             allowedMethods:
               - GET
               - POST
               - PUT
               - DELETE
+              - PATCH
               - OPTIONS
             allowedHeaders:
               - "*"
             allowCredentials: true
+
   webflux:
     base-path: /
 
 springdoc:
   api-docs:
     path: /v3/api-docs
-
   swagger-ui:
     enabled: true
     path: /swagger-ui.html
     urls:
       - name: Auth Service
         url: /api/auth/v3/api-docs
-
       - name: User Service
         url: /api/users/v3/api-docs
-
       - name: Course Service
         url: /api/courses/v3/api-docs
-
       - name: Student Service
         url: /api/students/v3/api-docs
-
+      - name: Faculty Service
+        url: /api/faculty/v3/api-docs
       - name: Library Service
         url: /api/library/v3/api-docs
-
       - name: Dashboard Service
         url: /api/dashboard/v3/api-docs
 
@@ -109,3 +123,7 @@ eureka:
   instance:
     prefer-ip-address: true
     ip-address: 0.0.0.0
+
+logging:
+  level:
+    org.springframework.cloud.gateway: DEBUG

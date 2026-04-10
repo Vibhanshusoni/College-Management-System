@@ -1,27 +1,74 @@
 package com.userService.entity;
 
+import com.userService.enums.Role;
 import jakarta.persistence.*;
-import jakarta.validation.constraints.Email;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import java.time.LocalDateTime;
 
-@Getter
-@Setter
-@AllArgsConstructor
-@NoArgsConstructor
-@Builder
+
 @Entity
+@Table(name = "users")
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class UserEntity {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(unique = true)
-    private String username;
-    @Column(unique = true)
-    @Email
+
+    @Column(nullable = false, unique = true)
     private String email;
+
+    @Column(nullable = false)
+    private String username;
+
+    @Column(nullable = false)
+    @JsonIgnore
     private String password;
-    @Column(unique = true)
-    private String userId; // 12-digit unique ID
-    private String role;
+
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
+    private Role role;
+
+    @Column(nullable = false)
     private String department;
+
+    // Phone number (standard format)
+    @Column(nullable = false)
+    private String phoneNumber;
+
+    // 12-digit ID (unique per role)
+    @Column(nullable = false, unique = true, length = 12)
+    private String universityId;
+
+    @Column(nullable = false)
+    private boolean active = true;
+
+    @Column(nullable = false)
+    private LocalDateTime createdAt = LocalDateTime.now();
+
+    @Column(nullable = false)
+    private LocalDateTime updatedAt = LocalDateTime.now();
+
+    // Audit fields
+    @Column(name = "created_by")
+    private String createdBy;
+
+    @Column(name = "updated_by")
+    private String updatedBy;
+
+    // Role-specific data (JSON stored as text)
+    @Column(columnDefinition = "JSON")
+    private String roleMetadata;
+
+    @PreUpdate
+    public void preUpdate() {
+        this.updatedAt = LocalDateTime.now();
+    }
 }

@@ -1,8 +1,10 @@
 server:
   port: 8081
+
 spring:
   application:
     name: User-Service
+
   datasource:
     url: jdbc:mysql://localhost:3306/user_service_db
     username: root
@@ -12,12 +14,20 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQL8Dialect
+
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
 
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka
-
   instance:
     prefer-ip-address: true
     ip-address: 0.0.0.0
@@ -27,3 +37,10 @@ springdoc:
     path: /v3/api-docs
   swagger-ui:
     path: /swagger-ui.html
+    enabled: true
+    operations-sorter: method
+
+logging:
+  level:
+    com.user: DEBUG
+    org.springframework.security: DEBUG

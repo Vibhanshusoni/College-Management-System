@@ -30,6 +30,8 @@ Copy and paste this in MySQL Command Line or Workbench:
 -- Create all databases for College Management System
 -- Password: Vivan@1234
 
+-- Create all required databases for College Management System
+
 -- 1. Auth Service Database
 CREATE DATABASE IF NOT EXISTS auth_service_db 
 CHARACTER SET utf8mb4 
@@ -50,10 +52,23 @@ CREATE DATABASE IF NOT EXISTS studentservice
 CHARACTER SET utf8mb4 
 COLLATE utf8mb4_unicode_ci;
 
--- 5. Library Service Database
+-- 5. Faculty Service Database (NEW)
+CREATE DATABASE IF NOT EXISTS faculty_service_db 
+CHARACTER SET utf8mb4 
+COLLATE utf8mb4_unicode_ci;
+
+-- 6. Library Service Database
 CREATE DATABASE IF NOT EXISTS libraryservice 
 CHARACTER SET utf8mb4 
 COLLATE utf8mb4_unicode_ci;
+
+-- 7. Dashboard Service Database (if separate data needed)
+CREATE DATABASE IF NOT EXISTS dashboardservice 
+CHARACTER SET utf8mb4 
+COLLATE utf8mb4_unicode_ci;
+
+-- Verify all databases created
+SHOW DATABASES;
 
 -- Verify creation
 SHOW DATABASES;
