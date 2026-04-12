@@ -1,5 +1,6 @@
 package com.collage.library.entity;
 
+import com.collage.library.enums.IssueStatus;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,11 +1,12 @@
-package com.college.attendance_Service.service;
+package com.attendance_Service.service;
 
 
-import com.college.attendance_Service.dto.AttendanceDTO;
-import com.college.attendance_Service.entity.AttendanceEntity;
-import com.college.attendance_Service.enums.AttendanceStatus;
-import com.college.attendance_Service.exception.*;
-import com.college.attendance_Service.repository.AttendanceRepository;
+import com.attendance_Service.dto.AttendanceDTO;
+import com.attendance_Service.entity.AttendanceEntity;
+import com.attendance_Service.enums.AttendanceStatus;
+import com.attendance_Service.exception.ResourceNotFoundException;
+import com.attendance_Service.exception.*;
+import com.attendance_Service.repository.AttendanceRepository;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
