@@ -8,3 +8,229 @@
 2026-04-21T10:50:03.265+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-3] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
 2026-04-21T10:50:14.612+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-2] c.userService.controller.UserController  : VERIFY USER | email=madhuri@gmail.com
 2026-04-21T10:50:41.354+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-5] c.userService.controller.UserController  : VERIFY USER | email=raj@college.edu
+2026-04-21T10:52:23.607+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T10:52:43.519+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-7] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T10:52:43.668+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-9] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T10:53:34.484+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-8] c.userService.controller.UserController  : VERIFY USER | email=library@gmail.com
+2026-04-21T10:56:58.694+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-3] c.userService.controller.UserController  : VERIFY USER | email=krishna.toss.it@gmail.com
+2026-04-21T10:57:23.623+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T10:59:24.583+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-5] c.userService.controller.UserController  : VERIFY USER | email=library@gmail.com
+2026-04-21T11:02:23.627+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T11:03:08.421+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-4] c.userService.controller.UserController  : VERIFY USER | email=krishna.toss.it@gmail.com
+2026-04-21T11:07:23.629+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T11:10:17.072+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-9] c.userService.controller.UserController  : VERIFY USER | email=krishna.toss.it@gmail.com
+2026-04-21T11:10:17.991+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-8] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T11:10:18.226+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-10] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T11:12:23.632+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T11:17:23.633+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T11:22:23.635+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T11:27:23.636+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T11:32:23.654+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T11:37:23.655+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T11:37:50.550+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-2] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T11:37:50.677+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-5] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T11:38:35.330+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-6] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T11:38:35.468+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-4] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T11:38:42.611+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-7] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T11:39:22.069+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-9] c.userService.controller.UserController  : VERIFY USER | email=madhuri@gmail.com
+2026-04-21T11:42:06.147+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-1] c.userService.controller.UserController  : VERIFY USER | email=krishna.toss.it@gmail.com
+2026-04-21T11:42:07.319+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-3] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T11:42:07.486+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-2] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T11:42:23.659+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T11:45:29.252+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-4] c.userService.controller.UserController  : CREATE USER | requestedBy=ADMIN | role=SYSTEM
+2026-04-21T11:45:29.255+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-4] c.u.services.impl.UserServiceImpl        : Creating user sonam@gmail.com
+2026-04-21T11:45:51.532+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-7] c.userService.controller.UserController  : VERIFY USER | email=sonam@gmail.com
+2026-04-21T11:47:23.676+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T11:51:32.223+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-10] c.userService.controller.UserController  : VERIFY USER | email=madhuri@gmail.com
+2026-04-21T11:52:23.682+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T11:52:53.928+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-3] c.userService.controller.UserController  : VERIFY USER | email=madhuri@gmail.com
+2026-04-21T11:57:23.684+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T12:02:23.686+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T12:02:46.717+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-5] c.userService.controller.UserController  : VERIFY USER | email=library@gmail.com
+2026-04-21T12:07:23.687+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T12:08:48.057+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-4] c.userService.controller.UserController  : VERIFY USER | email=madhuri@gmail.com
+2026-04-21T12:12:23.690+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T12:17:23.699+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T12:18:29.036+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-9] c.userService.controller.UserController  : VERIFY USER | email=krishna.toss.it@gmail.com
+2026-04-21T12:18:29.910+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-8] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T12:18:30.017+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-10] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T12:19:30.882+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-2] c.userService.controller.UserController  : VERIFY USER | email=krishna.toss.it@gmail.com
+2026-04-21T12:19:31.515+05:30  WARN 27556 --- [User-Service] [http-nio-8081-exec-2] c.u.exception.GlobalExceptionHandler     : Invalid operation: Invalid credentials
+2026-04-21T12:19:38.634+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-5] c.userService.controller.UserController  : VERIFY USER | email=krishna.toss.it@gmail.com
+2026-04-21T12:19:39.577+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-6] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T12:19:39.742+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-4] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T12:21:37.581+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-8] c.userService.controller.UserController  : VERIFY USER | email=madhuri@gmail.com
+2026-04-21T12:21:50.970+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-10] c.userService.controller.UserController  : GET USER BY UNIVERSITY ID | universityId=FAC000006 | requestedBy=SYSTEM
+2026-04-21T12:21:51.003+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-1] c.userService.controller.UserController  : UPDATE USER BY UNIVERSITY ID | universityId=STU000004 | requestedBy=ADMIN
+2026-04-21T12:21:51.022+05:30  WARN 27556 --- [User-Service] [http-nio-8081-exec-1] c.u.exception.GlobalExceptionHandler     : Resource not found: User not found with universityId: STU000004
+2026-04-21T12:22:23.715+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T12:23:21.381+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-5] c.userService.controller.UserController  : DELETE USER BY UNIVERSITY ID | universityId=STU000004 | requestedBy=ADMIN | role=ADMIN
+2026-04-21T12:23:21.410+05:30  WARN 27556 --- [User-Service] [http-nio-8081-exec-5] c.u.exception.GlobalExceptionHandler     : Resource not found: User not found with universityId: STU000004
+2026-04-21T12:25:05.986+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-4] c.userService.controller.UserController  : CREATE USER | requestedBy=ADMIN | role=SYSTEM
+2026-04-21T12:25:05.988+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-4] c.u.services.impl.UserServiceImpl        : Creating user sonamjain@gmail.com
+2026-04-21T12:27:23.717+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T12:28:57.661+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-9] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T12:28:57.820+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-8] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T12:29:10.771+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-10] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T12:29:39.186+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-1] c.userService.controller.UserController  : UPDATE USER | id=12 | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T12:29:39.287+05:30  WARN 27556 --- [User-Service] [http-nio-8081-exec-1] c.u.services.impl.UserServiceImpl        :  Student not linked to Student-Service, skipping cascade update
+2026-04-21T12:29:39.431+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-3] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T12:32:23.718+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T12:34:31.580+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-5] c.userService.controller.UserController  : VERIFY USER | email=krishna.toss.it@gmail.com
+2026-04-21T12:37:23.727+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T12:39:09.055+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-4] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T12:40:02.307+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-7] c.userService.controller.UserController  : VERIFY USER | email=krishna.toss.it@gmail.com
+2026-04-21T12:42:23.737+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T12:47:23.739+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T12:52:23.741+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T12:56:34.043+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-10] c.userService.controller.UserController  : VERIFY USER | email=madhuri@gmail.com
+2026-04-21T12:57:23.744+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T12:58:54.644+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-3] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T12:58:54.762+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-2] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T12:59:06.937+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-5] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T12:59:15.585+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-6] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T12:59:15.714+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-4] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T13:00:19.003+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-9] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T13:00:33.557+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-8] c.userService.controller.UserController  : DELETE USER | id=13 | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T13:00:39.101+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-10] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T13:00:49.955+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-1] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T13:00:50.061+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-3] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T13:01:01.137+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-2] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T13:01:21.169+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-5] c.userService.controller.UserController  : UPDATE USER | id=1 | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T13:01:21.175+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-5] c.u.services.impl.UserServiceImpl        : ADMIN - no cascade update required
+2026-04-21T13:01:21.328+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-6] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T13:01:26.906+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-4] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T13:01:36.394+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-7] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T13:02:23.746+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T13:03:04.422+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-8] c.userService.controller.UserController  : VERIFY USER | email=library@gmail.com
+2026-04-21T13:04:27.691+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-1] c.userService.controller.UserController  : VERIFY USER | email=sita@gmail.com
+2026-04-21T13:05:33.530+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-2] c.userService.controller.UserController  : VERIFY USER | email=krishna.toss.it@gmail.com
+2026-04-21T13:07:23.756+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T13:12:23.758+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T13:17:23.764+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T13:21:31.934+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-6] c.userService.controller.UserController  : VERIFY USER | email=krishna.toss.it@gmail.com
+2026-04-21T13:21:32.904+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-4] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T13:21:33.010+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-7] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T13:22:23.771+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T13:22:46.849+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-10] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T13:22:46.944+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-1] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T13:22:49.971+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-3] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T13:27:23.772+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T13:30:45.514+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-5] c.userService.controller.UserController  : VERIFY USER | email=krishna.toss.it@gmail.com
+2026-04-21T13:32:23.774+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T13:37:23.776+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T13:37:32.846+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-4] c.userService.controller.UserController  : VERIFY USER | email=madhuri@gmail.com
+2026-04-21T13:40:45.222+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-9] c.userService.controller.UserController  : VERIFY USER | email=krishna.toss.it@gmail.com
+2026-04-21T13:42:23.781+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T13:47:23.782+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T13:52:23.795+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T13:57:23.808+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T14:00:19.816+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-10] c.userService.controller.UserController  : VERIFY USER | email=madhuri@gmail.com
+2026-04-21T14:02:23.809+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T14:07:23.811+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T14:08:47.886+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-3] c.userService.controller.UserController  : VERIFY USER | email=krishna.toss.it@gmail.com
+2026-04-21T14:10:59.336+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-5] c.userService.controller.UserController  : VERIFY USER | email=library@gmail.com
+2026-04-21T14:12:23.813+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T14:17:23.825+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T14:22:23.832+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T14:27:23.834+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T14:32:14.610+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-4] c.userService.controller.UserController  : VERIFY USER | email=krishna.toss.it@gmail.com
+2026-04-21T14:32:23.835+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T14:32:56.888+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-7] c.userService.controller.UserController  : VERIFY USER | email=krishna.toss.it@gmail.com
+2026-04-21T14:32:57.786+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-9] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T14:32:57.870+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-8] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T14:36:07.470+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-3] c.userService.controller.UserController  : VERIFY USER | email=krishna.toss.it@gmail.com
+2026-04-21T14:36:08.350+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-2] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T14:36:08.430+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-5] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T14:37:23.838+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T14:37:50.228+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-7] c.userService.controller.UserController  : VERIFY USER | email=krishna.toss.it@gmail.com
+2026-04-21T14:42:23.840+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T14:47:23.852+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T14:52:23.854+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T14:55:43.843+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-8] c.userService.controller.UserController  : VERIFY USER | email=madhuri@gmail.com
+2026-04-21T14:56:22.733+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-10] c.userService.controller.UserController  : GET USER BY UNIVERSITY ID | universityId=FAC000006 | requestedBy=SYSTEM
+2026-04-21T14:56:22.773+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-1] c.userService.controller.UserController  : UPDATE USER BY UNIVERSITY ID | universityId=STU000003 | requestedBy=ADMIN
+2026-04-21T14:56:22.796+05:30  WARN 27556 --- [User-Service] [http-nio-8081-exec-1] c.u.exception.GlobalExceptionHandler     : Resource not found: User not found with universityId: STU000003
+2026-04-21T14:57:23.856+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T15:02:23.856+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T15:02:44.538+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-5] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T15:02:44.654+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-6] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T15:02:47.189+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-4] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T15:06:07.141+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-9] c.userService.controller.UserController  : VERIFY USER | email=krishna.toss.it@gmail.com
+2026-04-21T15:07:23.858+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T15:07:26.673+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-10] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T15:07:26.755+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-1] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T15:07:40.288+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-3] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T15:07:40.367+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-2] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T15:12:23.859+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T15:17:23.864+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T15:17:29.912+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-6] c.userService.controller.UserController  : VERIFY USER | email=library@gmail.com
+2026-04-21T15:22:23.866+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T15:27:23.867+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T15:28:55.039+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-7] c.userService.controller.UserController  : VERIFY USER | email=krishna.toss.it@gmail.com
+2026-04-21T15:28:56.046+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-9] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T15:28:56.139+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-8] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T15:31:21.208+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-3] c.userService.controller.UserController  : VERIFY USER | email=raj@college.edu
+2026-04-21T15:32:23.869+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T15:34:20.375+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-5] c.userService.controller.UserController  : VERIFY USER | email=krishna.toss.it@gmail.com
+2026-04-21T15:37:23.871+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T15:42:23.871+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T15:44:47.289+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-4] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T15:44:47.380+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-7] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T15:44:57.963+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-9] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T15:44:58.067+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-8] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T15:47:23.874+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T15:52:23.875+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T15:57:23.879+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T15:57:33.231+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-1] c.userService.controller.UserController  : VERIFY USER | email=raj@college.edu
+2026-04-21T15:57:33.373+05:30  WARN 27556 --- [User-Service] [http-nio-8081-exec-1] c.u.exception.GlobalExceptionHandler     : Invalid operation: Invalid credentials
+2026-04-21T15:57:56.174+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-3] c.userService.controller.UserController  : VERIFY USER | email=raj@college.edu
+2026-04-21T15:57:56.319+05:30  WARN 27556 --- [User-Service] [http-nio-8081-exec-3] c.u.exception.GlobalExceptionHandler     : Invalid operation: Invalid credentials
+2026-04-21T15:58:07.865+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-2] c.userService.controller.UserController  : VERIFY USER | email=raj@college.edu
+2026-04-21T16:02:23.881+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T16:04:51.837+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-6] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 857 ms
+2026-04-21T16:05:39.159+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-4] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T16:07:23.882+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T16:07:27.634+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-9] c.userService.controller.UserController  : VERIFY USER | email=krishna.toss.it@gmail.com
+2026-04-21T16:08:17.256+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-8] c.userService.controller.UserController  : GET USER | id=12 | requestedBy=SYSTEM
+2026-04-21T16:12:23.883+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T16:15:41.943+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-3] c.userService.controller.UserController  : VERIFY USER | email=raj@college.edu
+2026-04-21T16:17:23.896+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T16:19:13.392+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-5] c.userService.controller.UserController  : VERIFY USER | email=raj@college.edu
+2026-04-21T16:19:32.465+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-6] c.userService.controller.UserController  : VERIFY USER | email=madhuri@gmail.com
+2026-04-21T16:20:13.274+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-4] c.userService.controller.UserController  : VERIFY USER | email=krishna.toss.it@gmail.com
+2026-04-21T16:20:14.105+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-7] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T16:20:14.206+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-9] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T16:22:23.901+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T16:24:33.469+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-1] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T16:24:33.555+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-3] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T16:27:23.913+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T16:28:59.759+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-5] c.userService.controller.UserController  : VERIFY USER | email=krishna.toss.it@gmail.com
+2026-04-21T16:29:00.682+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-6] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T16:29:00.779+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-4] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T16:30:03.040+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-8] c.userService.controller.UserController  : VERIFY USER | email=krishna.toss.it@gmail.com
+2026-04-21T16:30:03.912+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-10] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T16:30:04.009+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-1] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T16:30:48.479+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-3] c.userService.controller.UserController  : VERIFY USER | email=library@gmail.com
+2026-04-21T16:32:23.928+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T16:33:49.592+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-6] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T16:33:49.690+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-4] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T16:37:23.940+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T16:39:10.192+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-9] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T16:39:10.324+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-8] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T16:39:19.342+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-10] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T16:39:19.436+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-1] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T16:39:30.310+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-3] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T16:39:30.411+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-2] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T16:40:59.181+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-6] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T16:40:59.275+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-4] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T16:41:37.868+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-7] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T16:41:37.969+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-9] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T16:42:23.942+05:30  INFO 27556 --- [User-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T16:42:32.076+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-8] c.userService.controller.UserController  : VERIFY USER | email=krishna.toss.it@gmail.com
+2026-04-21T16:42:43.018+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-1] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T16:42:43.166+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-3] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T16:43:34.458+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-5] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T16:43:34.607+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-6] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T16:43:48.803+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-4] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN
+2026-04-21T16:43:48.904+05:30  INFO 27556 --- [User-Service] [http-nio-8081-exec-7] c.userService.controller.UserController  : GET ALL USERS | requestedBy=SYSTEM | role=ADMIN

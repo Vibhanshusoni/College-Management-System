@@ -1,2 +1,107 @@
 2026-04-21T10:45:28.828+05:30  WARN 12876 --- [Subject-Service] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11h41m9s384ms782µs700ns).
 2026-04-21T10:47:34.974+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T10:52:34.975+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T10:57:35.008+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T11:02:35.025+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T11:07:35.027+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T11:12:35.048+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T11:17:35.055+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T11:22:35.057+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T11:27:35.058+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T11:32:35.060+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T11:37:35.071+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T11:42:35.073+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T11:43:13.111+05:30  INFO 12876 --- [Subject-Service] [http-nio-8089-exec-6] c.s.controller.SubjectController         : Get all subjects request
+2026-04-21T11:47:35.078+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T11:52:35.085+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T11:57:35.089+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T11:59:37.598+05:30  INFO 12876 --- [Subject-Service] [http-nio-8089-exec-1] c.s.controller.SubjectController         : Get all subjects request
+2026-04-21T12:02:35.091+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T12:04:36.854+05:30  INFO 12876 --- [Subject-Service] [http-nio-8089-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 1240 ms
+2026-04-21T12:06:57.026+05:30  INFO 12876 --- [Subject-Service] [http-nio-8089-exec-3] c.s.controller.SubjectController         : Get all subjects request
+2026-04-21T12:07:35.093+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T12:08:49.201+05:30  INFO 12876 --- [Subject-Service] [http-nio-8089-exec-4] c.s.controller.SubjectController         : Get all subjects request
+2026-04-21T12:08:55.545+05:30  INFO 12876 --- [Subject-Service] [http-nio-8089-exec-5] c.s.controller.SubjectController         : Get all subjects request
+2026-04-21T12:12:35.094+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T12:16:04.268+05:30  INFO 12876 --- [Subject-Service] [http-nio-8089-exec-7] c.s.controller.SubjectController         : Get all subjects request
+2026-04-21T12:17:35.096+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T12:17:46.621+05:30  INFO 12876 --- [Subject-Service] [http-nio-8089-exec-8] c.s.controller.SubjectController         : Get all subjects request
+2026-04-21T12:18:36.317+05:30  INFO 12876 --- [Subject-Service] [http-nio-8089-exec-9] c.s.controller.SubjectController         : Get all subjects request
+2026-04-21T12:19:50.814+05:30  INFO 12876 --- [Subject-Service] [http-nio-8089-exec-3] c.s.controller.SubjectController         : Get all subjects request
+2026-04-21T12:21:23.643+05:30  INFO 12876 --- [Subject-Service] [http-nio-8089-exec-4] c.s.controller.SubjectController         : Get all subjects request
+2026-04-21T12:21:56.418+05:30  INFO 12876 --- [Subject-Service] [http-nio-8089-exec-5] c.s.controller.SubjectController         : Get subject by code: string
+2026-04-21T12:21:56.511+05:30  WARN 12876 --- [Subject-Service] [http-nio-8089-exec-5] c.s.exception.GlobalExceptionHandler     : Resource not found: Subject not found: string
+2026-04-21T12:22:35.098+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T12:23:28.678+05:30  INFO 12876 --- [Subject-Service] [http-nio-8089-exec-1] c.s.controller.SubjectController         : Get all subjects request
+2026-04-21T12:24:20.200+05:30  INFO 12876 --- [Subject-Service] [http-nio-8089-exec-8] c.s.controller.SubjectController         : Get subject by code: 1M200001
+2026-04-21T12:27:35.099+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T12:29:19.112+05:30  INFO 12876 --- [Subject-Service] [http-nio-8089-exec-3] c.s.controller.SubjectController         : Get subject by code: [   "1M200001" ]
+2026-04-21T12:29:19.131+05:30  WARN 12876 --- [Subject-Service] [http-nio-8089-exec-3] c.s.exception.GlobalExceptionHandler     : Resource not found: Subject not found: [   "1M200001" ]
+2026-04-21T12:29:35.392+05:30  INFO 12876 --- [Subject-Service] [http-nio-8089-exec-10] c.s.controller.SubjectController         : Get subject by code: 1M200001
+2026-04-21T12:29:51.587+05:30  INFO 12876 --- [Subject-Service] [http-nio-8089-exec-4] c.s.controller.SubjectController         : Get all subjects request
+2026-04-21T12:32:35.102+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T12:37:35.116+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T12:38:18.064+05:30  INFO 12876 --- [Subject-Service] [http-nio-8089-exec-7] c.s.controller.SubjectController         : Get all subjects request
+2026-04-21T12:42:35.123+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T12:47:35.125+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T12:52:35.126+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T12:57:35.127+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T13:02:08.354+05:30  INFO 12876 --- [Subject-Service] [http-nio-8089-exec-8] c.s.controller.SubjectController         : Get all subjects request
+2026-04-21T13:02:35.129+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T13:07:35.136+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T13:12:35.166+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T13:17:35.167+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T13:22:35.171+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T13:22:58.067+05:30  INFO 12876 --- [Subject-Service] [http-nio-8089-exec-2] c.s.controller.SubjectController         : Get all subjects request
+2026-04-21T13:27:35.174+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T13:32:35.176+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T13:37:35.177+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T13:42:35.185+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T13:47:35.186+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T13:52:35.190+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T13:57:35.204+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T14:02:35.207+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T14:07:35.209+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T14:12:35.225+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T14:17:35.227+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T14:22:35.228+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T14:27:35.230+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T14:32:35.244+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T14:37:35.252+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T14:42:35.266+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T14:45:00.200+05:30  INFO 12876 --- [Subject-Service] [http-nio-8089-exec-10] c.s.controller.SubjectController         : Get all subjects request
+2026-04-21T14:45:21.850+05:30  INFO 12876 --- [Subject-Service] [http-nio-8089-exec-4] c.s.controller.SubjectController         : Get all subjects request
+2026-04-21T14:45:59.265+05:30  INFO 12876 --- [Subject-Service] [http-nio-8089-exec-5] c.s.controller.SubjectController         : Get all subjects request
+2026-04-21T14:46:08.286+05:30  INFO 12876 --- [Subject-Service] [http-nio-8089-exec-6] c.s.controller.SubjectController         : Get all subjects request
+2026-04-21T14:47:18.033+05:30  INFO 12876 --- [Subject-Service] [http-nio-8089-exec-1] c.s.controller.SubjectController         : Get all subjects request
+2026-04-21T14:47:35.271+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T14:52:35.273+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T14:53:11.236+05:30  INFO 12876 --- [Subject-Service] [http-nio-8089-exec-9] c.s.controller.SubjectController         : Get all subjects request
+2026-04-21T14:55:02.878+05:30  INFO 12876 --- [Subject-Service] [http-nio-8089-exec-3] c.s.controller.SubjectController         : Get all subjects request
+2026-04-21T14:57:35.274+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T15:02:35.277+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T15:02:52.168+05:30  INFO 12876 --- [Subject-Service] [http-nio-8089-exec-4] c.s.controller.SubjectController         : Get all subjects request
+2026-04-21T15:07:35.278+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T15:12:35.280+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T15:17:35.292+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T15:22:35.299+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T15:27:35.301+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T15:29:01.289+05:30  INFO 12876 --- [Subject-Service] [http-nio-8089-exec-6] c.s.controller.SubjectController         : Get all subjects request
+2026-04-21T15:32:35.302+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T15:37:35.303+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T15:41:45.965+05:30  INFO 12876 --- [Subject-Service] [http-nio-8089-exec-1] c.s.controller.SubjectController         : Get all subjects request
+2026-04-21T15:42:35.305+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T15:47:35.318+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T15:52:35.320+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T15:57:35.322+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T16:01:51.768+05:30  INFO 12876 --- [Subject-Service] [http-nio-8089-exec-9] c.s.controller.SubjectController         : Get all subjects request
+2026-04-21T16:02:35.323+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T16:07:35.325+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T16:12:35.329+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T16:17:35.333+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T16:22:35.348+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T16:27:35.356+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T16:32:35.363+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T16:35:31.248+05:30  INFO 12876 --- [Subject-Service] [http-nio-8089-exec-3] c.s.controller.SubjectController         : Get all subjects request
+2026-04-21T16:37:35.373+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T16:42:35.386+05:30  INFO 12876 --- [Subject-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
