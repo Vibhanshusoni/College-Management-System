@@ -1937,3 +1937,923 @@ org.springframework.web.client.HttpClientErrorException$BadRequest: 400  on POST
 2026-04-21T16:43:52.149+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-5] c.a.services.impl.AuthServiceImpl        : Validating token
 2026-04-21T16:43:52.159+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-10] c.a.services.impl.AuthServiceImpl        : Validating token
 2026-04-21T16:45:17.472+05:30  INFO 19956 --- [Auth-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T16:47:59.811+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-3] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T16:48:35.650+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-7] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T16:50:17.482+05:30  INFO 19956 --- [Auth-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T16:50:29.755+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-5] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T16:50:29.755+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-10] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T16:50:29.766+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-4] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T16:54:30.682+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-2] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T16:54:30.682+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-3] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T16:54:30.684+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-7] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T16:54:36.743+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-5] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T16:54:36.743+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-9] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T16:54:36.775+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-10] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T16:54:40.597+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-4] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T16:54:40.597+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-6] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T16:54:40.601+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-1] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T16:54:57.686+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-8] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T16:54:57.686+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-2] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T16:54:57.705+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-7] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T16:55:02.926+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-3] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T16:55:02.926+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-9] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T16:55:02.933+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-5] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T16:55:17.494+05:30  INFO 19956 --- [Auth-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T16:55:30.313+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-10] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T16:55:31.090+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-6] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T16:56:03.844+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-1] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T16:56:03.863+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-8] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T16:56:03.865+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-2] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T16:56:15.317+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-7] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T16:56:20.633+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-9] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T16:56:20.635+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-3] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T16:56:20.661+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-5] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T16:56:21.124+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-10] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T16:56:24.579+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-4] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T16:56:24.579+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-6] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T16:56:24.586+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-1] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T16:56:28.648+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-2] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T16:56:28.648+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-8] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T16:56:28.656+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-7] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T16:56:44.640+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-3] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T16:56:44.640+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-9] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T16:56:44.726+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-5] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T16:57:08.829+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-10] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T16:57:33.038+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-6] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T16:58:40.501+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-8] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T16:58:47.169+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-7] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T16:59:10.065+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-3] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:00:17.498+05:30  INFO 19956 --- [Auth-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T17:02:20.248+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-5] c.authService.controller.AuthController  : Logout API called for admin
+2026-04-21T17:02:20.248+05:30  WARN 19956 --- [Auth-Service] [http-nio-8083-exec-5] c.a.services.impl.AuthServiceImpl        : BLACKLISTING TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJ1bml2ZXJzaXR5SWQiOiJBRE0wMDAwMDEiLCJyb2xlIjoiQURNSU4iLCJkZXBhcnRtZW50IjoiQWRtaW5pc3RyYXRpb24iLCJpYXQiOjE3NzY3NjkyMDMsImV4cCI6MTc3Njc3MjgwM30.IBNbu5QMLnNAC4ibyzaOUivJSfGX-FCnOiX4C2C6gUc
+2026-04-21T17:02:34.388+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-10] c.authService.controller.AuthController  : Login API called for madhuri@gmail.com
+2026-04-21T17:02:34.389+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-10] c.a.services.impl.AuthServiceImpl        : Authenticating user madhuri@gmail.com
+2026-04-21T17:02:34.795+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-6] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:02:34.808+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-4] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:02:34.839+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-1] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:02:50.098+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-2] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:02:52.153+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-8] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:03:21.851+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-7] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:03:22.588+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-3] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:03:25.144+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-9] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:03:27.647+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-5] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:03:29.575+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-10] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:03:29.674+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-6] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:03:38.671+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-1] c.authService.controller.AuthController  : Login API called for madhuri@gmail.com
+2026-04-21T17:03:38.671+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-1] c.a.services.impl.AuthServiceImpl        : Authenticating user madhuri@gmail.com
+2026-04-21T17:03:39.150+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-2] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:03:39.151+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-8] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:03:39.186+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-7] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:03:44.063+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-3] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:03:47.638+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-9] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:04:06.638+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-5] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:04:08.393+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-10] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:04:16.416+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-6] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:04:16.434+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-4] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:04:16.437+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-1] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:04:18.464+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-8] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:05:17.504+05:30  INFO 19956 --- [Auth-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T17:07:59.078+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-9] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:10:08.055+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-10] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:10:08.580+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-6] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:10:08.581+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-4] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:10:08.619+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-1] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:10:08.620+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-8] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:10:08.622+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-2] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:10:08.676+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-7] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:10:17.505+05:30  INFO 19956 --- [Auth-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T17:10:57.333+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-9] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:10:57.333+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-3] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:10:57.347+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-5] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:10:57.366+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-10] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:10:57.371+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-6] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:10:57.438+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-4] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:11:07.334+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-1] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:11:07.364+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-8] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:11:07.365+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-2] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:11:17.613+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-7] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:11:21.011+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-9] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:11:36.371+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-3] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:11:38.895+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-5] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:14:22.162+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-1] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:14:22.508+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-8] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:14:22.728+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-2] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:14:33.626+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-7] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:14:57.142+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-9] c.authService.controller.AuthController  : Logout API called for faculty
+2026-04-21T17:14:57.142+05:30  WARN 19956 --- [Auth-Service] [http-nio-8083-exec-9] c.a.services.impl.AuthServiceImpl        : BLACKLISTING TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJ1bml2ZXJzaXR5SWQiOiJGQUMwMDAwMDYiLCJyb2xlIjoiRkFDVUxUWSIsImRlcGFydG1lbnQiOiJDU0UiLCJpYXQiOjE3NzY3NzEyMTgsImV4cCI6MTc3Njc3NDgxOH0.kNhWfBLVQ9A-vldXWvw9Ye2qFk5m5-MyE2yUcRDy8-o
+2026-04-21T17:15:03.175+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-3] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:15:08.319+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-5] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:15:08.343+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-4] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:15:17.516+05:30  INFO 19956 --- [Auth-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T17:15:19.718+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-10] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:15:21.978+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-6] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:15:21.981+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-1] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:15:21.991+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-8] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:15:22.015+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-2] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:15:22.016+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-7] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:15:22.026+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-9] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:15:22.043+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-3] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:15:22.043+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-5] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:15:59.405+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-10] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:16:12.846+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-6] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:16:21.734+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-1] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:16:27.667+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-8] c.authService.controller.AuthController  : Login API called for krishna.toss.it@gmail.com
+2026-04-21T17:16:27.667+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-8] c.a.services.impl.AuthServiceImpl        : Authenticating user krishna.toss.it@gmail.com
+2026-04-21T17:16:28.483+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-7] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:16:28.491+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-2] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:16:28.521+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-9] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:16:28.522+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-5] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:16:28.531+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-3] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:16:28.637+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-4] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:16:30.577+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-10] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:16:33.438+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-6] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:16:33.438+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-1] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:16:34.640+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-8] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:16:45.621+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-7] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:17:04.549+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-2] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:17:30.255+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-5] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:17:32.053+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-3] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:17:48.410+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-10] c.authService.controller.AuthController  : Logout API called for faculty
+2026-04-21T17:17:48.410+05:30  WARN 19956 --- [Auth-Service] [http-nio-8083-exec-10] c.a.services.impl.AuthServiceImpl        : BLACKLISTING TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJ1bml2ZXJzaXR5SWQiOiJGQUMwMDAwMDYiLCJyb2xlIjoiRkFDVUxUWSIsImRlcGFydG1lbnQiOiJDU0UiLCJpYXQiOjE3NzY3Njg1NzIsImV4cCI6MTc3Njc3MjE3Mn0.7ci2BkVKw0wMQQsSc2crflMWnr28iye7xSuPkaaiJYs
+2026-04-21T17:17:50.227+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-6] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:17:53.664+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-1] c.authService.controller.AuthController  : Login API called for library@gmail.com
+2026-04-21T17:17:53.664+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-1] c.a.services.impl.AuthServiceImpl        : Authenticating user library@gmail.com
+2026-04-21T17:17:54.009+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-8] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:17:54.040+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-7] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:17:54.051+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-2] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:17:54.057+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-9] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:17:54.070+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-5] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:17:54.086+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-4] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:17:54.086+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-3] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:17:54.086+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-10] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:17:56.595+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-6] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:18:01.189+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-1] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:18:10.570+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-8] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:18:13.911+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-7] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:18:14.838+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-2] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:18:16.007+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-9] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:18:16.273+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-5] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:18:16.547+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-3] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:18:16.773+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-4] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:18:18.532+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-10] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:18:18.613+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-6] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:19:03.887+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-8] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:19:11.120+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-7] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:19:19.331+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-9] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:19:28.408+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-5] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:19:29.578+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-3] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:19:33.871+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-4] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:19:33.887+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-10] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:20:17.531+05:30  INFO 19956 --- [Auth-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T17:20:24.674+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-6] c.authService.controller.AuthController  : Login API called for krishna.toss.it@gmail.com
+2026-04-21T17:20:24.674+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-6] c.a.services.impl.AuthServiceImpl        : Authenticating user krishna.toss.it@gmail.com
+2026-04-21T17:20:25.473+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-8] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:20:25.473+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-1] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:20:25.499+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-7] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:20:25.510+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-2] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:20:25.510+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-9] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:20:25.570+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-5] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:20:31.561+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-4] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:20:31.561+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-3] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:20:45.207+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-10] c.authService.controller.AuthController  : Logout API called for librarian
+2026-04-21T17:20:45.208+05:30  WARN 19956 --- [Auth-Service] [http-nio-8083-exec-10] c.a.services.impl.AuthServiceImpl        : BLACKLISTING TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJ1bml2ZXJzaXR5SWQiOiJMSUIwMDAwMDIiLCJyb2xlIjoiTElCUkFSSUFOIiwiZGVwYXJ0bWVudCI6IkxJQlJBUlkiLCJpYXQiOjE3NzY3NzIwNzMsImV4cCI6MTc3Njc3NTY3M30.6yu4w5zKKDRgaAap41RzTy5pWyuTcSChI2yq8LP6irU
+2026-04-21T17:20:52.563+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-6] c.authService.controller.AuthController  : Login API called for admin@gmail.com
+2026-04-21T17:20:52.563+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-6] c.a.services.impl.AuthServiceImpl        : Authenticating user admin@gmail.com
+2026-04-21T17:20:52.605+05:30 ERROR 19956 --- [Auth-Service] [http-nio-8083-exec-6] c.a.services.impl.AuthServiceImpl        : Error while calling USER-SERVICE: 404  on POST request for "http://USER-SERVICE/api/users/verify": "{"path":"/api/users/verify","error":"NOT_FOUND","message":"User not found","timestamp":"2026-04-21T17:20:52.5945248","status":404}"
+
+org.springframework.web.client.HttpClientErrorException$NotFound: 404  on POST request for "http://USER-SERVICE/api/users/verify": "{"path":"/api/users/verify","error":"NOT_FOUND","message":"User not found","timestamp":"2026-04-21T17:20:52.5945248","status":404}"
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:112) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:186) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:147) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:953) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:902) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:801) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:518) ~[spring-web-6.2.17.jar:6.2.17]
+	at com.authService.services.impl.AuthServiceImpl.login(AuthServiceImpl.java:47) ~[classes/:na]
+	at com.authService.controller.AuthController.login(AuthController.java:25) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.17.jar:6.2.17]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991) ~[spring-webmvc-6.2.17.jar:6.2.17]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896) ~[spring-webmvc-6.2.17.jar:6.2.17]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.17.jar:6.2.17]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.17.jar:6.2.17]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.17.jar:6.2.17]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.17.jar:6.2.17]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.17.jar:6.2.17]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.53.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.17.jar:6.2.17]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.53.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.53.jar:10.1.53]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:66) ~[spring-webmvc-6.2.17.jar:6.2.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319) ~[spring-security-config-6.5.9.jar:6.5.9]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267) ~[spring-webmvc-6.2.17.jar:6.2.17]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240) ~[spring-security-config-6.5.9.jar:6.5.9]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1775) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
+
+2026-04-21T17:20:52.619+05:30  WARN 19956 --- [Auth-Service] [http-nio-8083-exec-6] c.a.exception.GlobalExceptionHandler     : Invalid Credentials EXCEPTION: Unable to verify user credentials
+2026-04-21T17:21:04.468+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-1] c.authService.controller.AuthController  : Login API called for madhuri@gmail.com
+2026-04-21T17:21:04.468+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-1] c.a.services.impl.AuthServiceImpl        : Authenticating user madhuri@gmail.com
+2026-04-21T17:21:04.866+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-8] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:21:04.871+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-7] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:21:04.880+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-2] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:23:43.225+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-3] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:23:45.517+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-10] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:23:45.533+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-6] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:24:30.210+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-8] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:24:30.210+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-1] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:25:14.964+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-7] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:25:17.533+05:30  INFO 19956 --- [Auth-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T17:25:34.402+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-9] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:26:24.740+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-5] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:26:27.592+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-4] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:26:34.222+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-3] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:26:36.488+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-10] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:26:38.016+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-6] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:26:38.036+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-8] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:26:39.116+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-1] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:26:40.518+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-7] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:26:48.091+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-2] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:26:49.627+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-9] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:26:51.014+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-5] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:26:52.764+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-4] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:28:16.155+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-10] c.authService.controller.AuthController  : Login API called for krishna.toss.it@gmail.com
+2026-04-21T17:28:16.155+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-10] c.a.services.impl.AuthServiceImpl        : Authenticating user krishna.toss.it@gmail.com
+2026-04-21T17:28:16.966+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-6] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:28:16.976+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-8] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:28:16.986+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-1] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:28:16.995+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-7] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:28:16.997+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-2] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:28:17.054+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-9] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:28:21.151+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-5] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:28:24.678+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-4] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:28:27.149+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-3] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:28:29.950+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-10] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:28:31.733+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-6] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:28:31.791+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-8] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:29:47.423+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-5] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:29:57.290+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-4] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:30:08.961+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-3] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:30:17.545+05:30  INFO 19956 --- [Auth-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T17:30:18.068+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-10] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:30:31.747+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-6] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:32:10.112+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-1] c.authService.controller.AuthController  : Login API called for library@gmail.com
+2026-04-21T17:32:10.112+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-1] c.a.services.impl.AuthServiceImpl        : Authenticating user library@gmail.com
+2026-04-21T17:32:10.529+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-7] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:32:10.531+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-9] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:32:10.534+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-2] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:32:10.535+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-5] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:32:10.535+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-4] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:32:10.570+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-3] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:32:10.570+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-6] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:32:10.570+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-10] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:32:24.161+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-8] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:32:57.413+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-1] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:33:01.280+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-7] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:33:14.240+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-4] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:33:31.390+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-6] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:33:47.132+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-10] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:34:05.563+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-3] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:34:07.582+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-8] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:34:10.941+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-1] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:34:10.974+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-7] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:34:10.978+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-9] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:34:10.982+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-5] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:34:10.984+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-2] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:34:10.984+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-4] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:34:10.987+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-6] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:34:10.988+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-10] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:34:29.699+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-3] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:34:43.790+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-8] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:34:43.798+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-1] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:34:43.822+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-7] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:34:43.826+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-9] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:34:43.830+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-5] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:34:43.831+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-2] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:34:43.840+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-4] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:34:43.852+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-10] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:34:59.133+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-6] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:34:59.347+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-3] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:35:17.442+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-8] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:35:17.443+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-1] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:35:17.451+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-7] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:35:17.451+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-9] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:35:17.458+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-2] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:35:17.458+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-5] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:35:17.475+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-4] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:35:17.475+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-10] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:35:17.554+05:30  INFO 19956 --- [Auth-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T17:35:43.278+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-6] c.authService.controller.AuthController  : Logout API called for admin
+2026-04-21T17:35:43.279+05:30  WARN 19956 --- [Auth-Service] [http-nio-8083-exec-6] c.a.services.impl.AuthServiceImpl        : BLACKLISTING TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJ1bml2ZXJzaXR5SWQiOiJBRE0wMDAwMDEiLCJyb2xlIjoiQURNSU4iLCJkZXBhcnRtZW50IjoiQWRtaW5pc3RyYXRpb24iLCJpYXQiOjE3NzY3NzIyMjUsImV4cCI6MTc3Njc3NTgyNX0.JxdXB7xIlMk4A95U6337xeD4HuTAzx_Wqm0oj_KDtGo
+2026-04-21T17:35:55.470+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-3] c.authService.controller.AuthController  : Login API called for krishna@gmail.com
+2026-04-21T17:35:55.471+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-3] c.a.services.impl.AuthServiceImpl        : Authenticating user krishna@gmail.com
+2026-04-21T17:35:55.934+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-1] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:35:55.947+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-8] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:36:04.456+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-7] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:36:54.285+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-4] c.authService.controller.AuthController  : Logout API called for librarian
+2026-04-21T17:36:54.285+05:30  WARN 19956 --- [Auth-Service] [http-nio-8083-exec-4] c.a.services.impl.AuthServiceImpl        : BLACKLISTING TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJ1bml2ZXJzaXR5SWQiOiJMSUIwMDAwMDIiLCJyb2xlIjoiTElCUkFSSUFOIiwiZGVwYXJ0bWVudCI6IkxJQlJBUlkiLCJpYXQiOjE3NzY3NzI5MzAsImV4cCI6MTc3Njc3NjUzMH0.mZcP83yembfk2IJXBh1xaXvsdvMN5mThhZchHEquRpA
+2026-04-21T17:37:20.054+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-8] c.authService.controller.AuthController  : Login API called for krishna.toss.it@gmail.com
+2026-04-21T17:37:20.054+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-8] c.a.services.impl.AuthServiceImpl        : Authenticating user krishna.toss.it@gmail.com
+2026-04-21T17:37:20.887+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-7] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:37:20.907+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-9] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:37:20.909+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-5] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:37:20.909+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-2] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:37:20.923+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-10] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:37:20.973+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-4] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:37:36.060+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-3] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:37:46.848+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-6] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:37:49.033+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-1] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:37:49.033+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-8] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:37:51.497+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-7] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:37:54.384+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-9] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:38:01.310+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-5] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:38:08.467+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-2] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:38:14.080+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-10] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:38:25.624+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-3] c.authService.controller.AuthController  : Logout API called for admin
+2026-04-21T17:38:25.624+05:30  WARN 19956 --- [Auth-Service] [http-nio-8083-exec-3] c.a.services.impl.AuthServiceImpl        : BLACKLISTING TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJ1bml2ZXJzaXR5SWQiOiJBRE0wMDAwMDEiLCJyb2xlIjoiQURNSU4iLCJkZXBhcnRtZW50IjoiQWRtaW5pc3RyYXRpb24iLCJpYXQiOjE3NzY3NzMyNDAsImV4cCI6MTc3Njc3Njg0MH0.WaCn-TWLsugxekQO8QG7UbXUudrKQdVodgHictFtYiw
+2026-04-21T17:38:44.726+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-6] c.authService.controller.AuthController  : Login API called for madhuri@gmail.com
+2026-04-21T17:38:44.726+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-6] c.a.services.impl.AuthServiceImpl        : Authenticating user madhuri@gmail.com
+2026-04-21T17:38:45.093+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-8] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:38:45.094+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-1] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:38:45.119+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-7] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:38:49.023+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-2] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:38:49.023+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-9] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:38:49.036+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-5] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:39:02.370+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-10] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:39:08.407+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-4] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:39:16.124+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-3] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:39:44.730+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-6] c.authService.controller.AuthController  : Logout API called for admin
+2026-04-21T17:39:44.730+05:30  WARN 19956 --- [Auth-Service] [http-nio-8083-exec-6] c.a.services.impl.AuthServiceImpl        : BLACKLISTING TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJ1bml2ZXJzaXR5SWQiOiJBRE0wMDAwMDEiLCJyb2xlIjoiQURNSU4iLCJkZXBhcnRtZW50IjoiQWRtaW5pc3RyYXRpb24iLCJpYXQiOjE3NzY3NzI2OTYsImV4cCI6MTc3Njc3NjI5Nn0.AFKczv41hohbg4fNOPTBxCi4-Luak2xSnTB713NEkY0
+2026-04-21T17:39:50.935+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-8] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:39:50.935+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-1] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:39:50.956+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-7] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:39:55.863+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-9] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:39:59.301+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-2] c.authService.controller.AuthController  : Login API called for madhuri@gmail.com
+2026-04-21T17:39:59.301+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-2] c.a.services.impl.AuthServiceImpl        : Authenticating user madhuri@gmail.com
+2026-04-21T17:39:59.677+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-5] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:39:59.690+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-10] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:39:59.695+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-4] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:40:02.738+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-3] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:40:05.398+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-6] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:40:07.225+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-8] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:40:17.567+05:30  INFO 19956 --- [Auth-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T17:40:24.636+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-1] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:40:28.071+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-7] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:40:28.071+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-9] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:40:28.089+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-2] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:40:51.026+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-5] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:40:52.292+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-10] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:40:55.862+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-4] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:40:57.175+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-3] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:40:57.175+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-6] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:40:57.189+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-8] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:41:32.819+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-9] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:41:32.826+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-7] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:41:32.848+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-2] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:41:47.483+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-5] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:42:38.349+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-3] c.authService.controller.AuthController  : Logout API called for faculty
+2026-04-21T17:42:38.349+05:30  WARN 19956 --- [Auth-Service] [http-nio-8083-exec-3] c.a.services.impl.AuthServiceImpl        : BLACKLISTING TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJ1bml2ZXJzaXR5SWQiOiJGQUMwMDAwMDYiLCJyb2xlIjoiRkFDVUxUWSIsImRlcGFydG1lbnQiOiJDU0UiLCJpYXQiOjE3NzY3NzMzMjQsImV4cCI6MTc3Njc3NjkyNH0.jR0RWvLpjw77tOmPwPtaxMjbtaI_PD7g0I6mhW7gflc
+2026-04-21T17:42:55.905+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-8] c.authService.controller.AuthController  : Login API called for library@gmail.com
+2026-04-21T17:42:55.905+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-8] c.a.services.impl.AuthServiceImpl        : Authenticating user library@gmail.com
+2026-04-21T17:42:56.336+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-1] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:42:56.336+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-9] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:42:56.368+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-7] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:42:56.368+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-2] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:42:56.371+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-4] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:42:56.371+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-5] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:42:56.371+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-10] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:42:56.371+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-3] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:43:41.835+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-6] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:43:41.835+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-8] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:43:41.860+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-1] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:43:41.860+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-9] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:43:41.868+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-2] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:43:41.868+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-7] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:43:41.873+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-10] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:43:41.873+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-5] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:43:48.115+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-3] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:44:10.266+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-6] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:44:47.577+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-7] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:44:55.092+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-5] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:44:55.092+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-10] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:44:55.108+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-4] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:44:55.108+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-3] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:44:55.112+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-6] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:44:55.126+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-9] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:44:55.126+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-8] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:44:55.126+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-1] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:45:17.575+05:30  INFO 19956 --- [Auth-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T17:45:30.252+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-2] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:45:49.823+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-7] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:45:58.460+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-5] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:46:38.224+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-3] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:47:21.863+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-6] c.authService.controller.AuthController  : Logout API called for librarian
+2026-04-21T17:47:21.863+05:30  WARN 19956 --- [Auth-Service] [http-nio-8083-exec-6] c.a.services.impl.AuthServiceImpl        : BLACKLISTING TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJ1bml2ZXJzaXR5SWQiOiJMSUIwMDAwMDIiLCJyb2xlIjoiTElCUkFSSUFOIiwiZGVwYXJ0bWVudCI6IkxJQlJBUlkiLCJpYXQiOjE3NzY3NzM1NzYsImV4cCI6MTc3Njc3NzE3Nn0.j4Ap1CL2t17mTBbm_8c2yuKmI-UkJ0FstRaB5EGESKQ
+2026-04-21T17:47:50.516+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-1] c.authService.controller.AuthController  : Login API called for madhuri@gmail.com
+2026-04-21T17:47:50.517+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-1] c.a.services.impl.AuthServiceImpl        : Authenticating user madhuri@gmail.com
+2026-04-21T17:47:50.531+05:30  WARN 19956 --- [Auth-Service] [http-nio-8083-exec-1] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: USER-SERVICE
+2026-04-21T17:47:50.535+05:30 ERROR 19956 --- [Auth-Service] [http-nio-8083-exec-1] c.a.services.impl.AuthServiceImpl        : Error while calling USER-SERVICE: No instances available for USER-SERVICE
+
+java.lang.IllegalStateException: No instances available for USER-SERVICE
+	at org.springframework.cloud.loadbalancer.blocking.client.BlockingLoadBalancerClient.execute(BlockingLoadBalancerClient.java:78) ~[spring-cloud-loadbalancer-4.3.2.jar:4.3.2]
+	at org.springframework.cloud.client.loadbalancer.LoadBalancerInterceptor.intercept(LoadBalancerInterceptor.java:55) ~[spring-cloud-commons-4.3.2.jar:4.3.2]
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:801) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:518) ~[spring-web-6.2.17.jar:6.2.17]
+	at com.authService.services.impl.AuthServiceImpl.login(AuthServiceImpl.java:47) ~[classes/:na]
+	at com.authService.controller.AuthController.login(AuthController.java:25) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.17.jar:6.2.17]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991) ~[spring-webmvc-6.2.17.jar:6.2.17]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896) ~[spring-webmvc-6.2.17.jar:6.2.17]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.17.jar:6.2.17]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.17.jar:6.2.17]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.17.jar:6.2.17]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.17.jar:6.2.17]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.17.jar:6.2.17]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.53.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.17.jar:6.2.17]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.53.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.53.jar:10.1.53]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:66) ~[spring-webmvc-6.2.17.jar:6.2.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319) ~[spring-security-config-6.5.9.jar:6.5.9]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267) ~[spring-webmvc-6.2.17.jar:6.2.17]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240) ~[spring-security-config-6.5.9.jar:6.5.9]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1775) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
+
+2026-04-21T17:47:50.545+05:30  WARN 19956 --- [Auth-Service] [http-nio-8083-exec-1] c.a.exception.GlobalExceptionHandler     : Invalid Credentials EXCEPTION: Unable to verify user credentials
+2026-04-21T17:48:18.898+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-8] c.authService.controller.AuthController  : Login API called for madhuri@gmail.com
+2026-04-21T17:48:18.898+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-8] c.a.services.impl.AuthServiceImpl        : Authenticating user madhuri@gmail.com
+2026-04-21T17:48:18.899+05:30  WARN 19956 --- [Auth-Service] [http-nio-8083-exec-8] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: USER-SERVICE
+2026-04-21T17:48:18.900+05:30 ERROR 19956 --- [Auth-Service] [http-nio-8083-exec-8] c.a.services.impl.AuthServiceImpl        : Error while calling USER-SERVICE: No instances available for USER-SERVICE
+
+java.lang.IllegalStateException: No instances available for USER-SERVICE
+	at org.springframework.cloud.loadbalancer.blocking.client.BlockingLoadBalancerClient.execute(BlockingLoadBalancerClient.java:78) ~[spring-cloud-loadbalancer-4.3.2.jar:4.3.2]
+	at org.springframework.cloud.client.loadbalancer.LoadBalancerInterceptor.intercept(LoadBalancerInterceptor.java:55) ~[spring-cloud-commons-4.3.2.jar:4.3.2]
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:801) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:518) ~[spring-web-6.2.17.jar:6.2.17]
+	at com.authService.services.impl.AuthServiceImpl.login(AuthServiceImpl.java:47) ~[classes/:na]
+	at com.authService.controller.AuthController.login(AuthController.java:25) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.17.jar:6.2.17]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991) ~[spring-webmvc-6.2.17.jar:6.2.17]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896) ~[spring-webmvc-6.2.17.jar:6.2.17]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.17.jar:6.2.17]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.17.jar:6.2.17]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.17.jar:6.2.17]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.17.jar:6.2.17]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.17.jar:6.2.17]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.53.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.17.jar:6.2.17]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.53.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.53.jar:10.1.53]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:66) ~[spring-webmvc-6.2.17.jar:6.2.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319) ~[spring-security-config-6.5.9.jar:6.5.9]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267) ~[spring-webmvc-6.2.17.jar:6.2.17]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240) ~[spring-security-config-6.5.9.jar:6.5.9]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1775) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
+
+2026-04-21T17:48:18.904+05:30  WARN 19956 --- [Auth-Service] [http-nio-8083-exec-8] c.a.exception.GlobalExceptionHandler     : Invalid Credentials EXCEPTION: Unable to verify user credentials
+2026-04-21T17:48:20.653+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-2] c.authService.controller.AuthController  : Login API called for madhuri@gmail.com
+2026-04-21T17:48:20.653+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-2] c.a.services.impl.AuthServiceImpl        : Authenticating user madhuri@gmail.com
+2026-04-21T17:48:20.654+05:30  WARN 19956 --- [Auth-Service] [http-nio-8083-exec-2] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: USER-SERVICE
+2026-04-21T17:48:20.665+05:30 ERROR 19956 --- [Auth-Service] [http-nio-8083-exec-2] c.a.services.impl.AuthServiceImpl        : Error while calling USER-SERVICE: No instances available for USER-SERVICE
+
+java.lang.IllegalStateException: No instances available for USER-SERVICE
+	at org.springframework.cloud.loadbalancer.blocking.client.BlockingLoadBalancerClient.execute(BlockingLoadBalancerClient.java:78) ~[spring-cloud-loadbalancer-4.3.2.jar:4.3.2]
+	at org.springframework.cloud.client.loadbalancer.LoadBalancerInterceptor.intercept(LoadBalancerInterceptor.java:55) ~[spring-cloud-commons-4.3.2.jar:4.3.2]
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:801) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:518) ~[spring-web-6.2.17.jar:6.2.17]
+	at com.authService.services.impl.AuthServiceImpl.login(AuthServiceImpl.java:47) ~[classes/:na]
+	at com.authService.controller.AuthController.login(AuthController.java:25) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.17.jar:6.2.17]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991) ~[spring-webmvc-6.2.17.jar:6.2.17]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896) ~[spring-webmvc-6.2.17.jar:6.2.17]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.17.jar:6.2.17]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.17.jar:6.2.17]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.17.jar:6.2.17]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.17.jar:6.2.17]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.17.jar:6.2.17]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.53.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.17.jar:6.2.17]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.53.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.53.jar:10.1.53]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:66) ~[spring-webmvc-6.2.17.jar:6.2.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.5.9.jar:6.5.9]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319) ~[spring-security-config-6.5.9.jar:6.5.9]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267) ~[spring-webmvc-6.2.17.jar:6.2.17]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240) ~[spring-security-config-6.5.9.jar:6.5.9]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.17.jar:6.2.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1775) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.53.jar:10.1.53]
+	at java.base/java.lang.Thread.run(Thread.java:1447) ~[na:na]
+
+2026-04-21T17:48:20.668+05:30  WARN 19956 --- [Auth-Service] [http-nio-8083-exec-2] c.a.exception.GlobalExceptionHandler     : Invalid Credentials EXCEPTION: Unable to verify user credentials
+2026-04-21T17:48:34.993+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-7] c.authService.controller.AuthController  : Login API called for madhuri@gmail.com
+2026-04-21T17:48:34.993+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-7] c.a.services.impl.AuthServiceImpl        : Authenticating user madhuri@gmail.com
+2026-04-21T17:48:35.921+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-10] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:48:35.933+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-5] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:48:35.955+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-3] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:49:21.404+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-4] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:50:00.827+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-9] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:50:08.651+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-1] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:50:17.576+05:30  INFO 19956 --- [Auth-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T17:51:13.517+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-2] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:51:14.575+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-7] c.authService.controller.AuthController  : Logout API called for faculty
+2026-04-21T17:51:14.585+05:30  WARN 19956 --- [Auth-Service] [http-nio-8083-exec-7] c.a.services.impl.AuthServiceImpl        : BLACKLISTING TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJ1bml2ZXJzaXR5SWQiOiJGQUMwMDAwMDYiLCJyb2xlIjoiRkFDVUxUWSIsImRlcGFydG1lbnQiOiJDU0UiLCJpYXQiOjE3NzY3NzMzOTksImV4cCI6MTc3Njc3Njk5OX0.OxkKOAG2c98LFl_MsJfW_jBKBhGGw8b7M4G09OsqcaQ
+2026-04-21T17:51:39.115+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-10] c.authService.controller.AuthController  : Login API called for library@gmail.com
+2026-04-21T17:51:39.115+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-10] c.a.services.impl.AuthServiceImpl        : Authenticating user library@gmail.com
+2026-04-21T17:51:39.534+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-5] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:51:39.547+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-3] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:51:39.548+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-4] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:51:39.552+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-6] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:51:39.579+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-9] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:51:39.580+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-8] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:51:39.580+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-1] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:51:39.582+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-2] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:51:42.820+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-7] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:52:16.076+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-10] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:52:22.184+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-5] c.authService.controller.AuthController  : Logout API called for faculty
+2026-04-21T17:52:22.184+05:30  WARN 19956 --- [Auth-Service] [http-nio-8083-exec-5] c.a.services.impl.AuthServiceImpl        : BLACKLISTING TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJ1bml2ZXJzaXR5SWQiOiJGQUMwMDAwMDYiLCJyb2xlIjoiRkFDVUxUWSIsImRlcGFydG1lbnQiOiJDU0UiLCJpYXQiOjE3NzY3NzM5MTUsImV4cCI6MTc3Njc3NzUxNX0.By9pc6rUzxr5TVGwofxqQUXc_v5cUeT96LNUYOhDS-I
+2026-04-21T17:52:39.185+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-3] c.authService.controller.AuthController  : Login API called for krishna.toss.it@gmail.com
+2026-04-21T17:52:39.185+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-3] c.a.services.impl.AuthServiceImpl        : Authenticating user krishna.toss.it@gmail.com
+2026-04-21T17:52:39.967+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-8] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:52:39.982+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-1] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:52:40.002+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-9] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:52:40.012+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-2] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:52:40.018+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-7] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:52:40.118+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-10] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:52:43.281+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-5] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:52:45.038+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-6] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:52:45.038+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-3] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:54:34.991+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-9] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:54:39.201+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-2] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:54:56.040+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-7] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:54:58.064+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-10] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:54:58.065+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-5] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:54:58.366+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-3] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:54:58.396+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-6] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:54:58.846+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-4] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:54:58.849+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-1] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:55:17.591+05:30  INFO 19956 --- [Auth-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-21T17:55:43.092+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-8] c.authService.controller.AuthController  : Login API called for library@gmail.com
+2026-04-21T17:55:43.093+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-8] c.a.services.impl.AuthServiceImpl        : Authenticating user library@gmail.com
+2026-04-21T17:55:43.540+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-9] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:55:43.540+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-2] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:55:43.556+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-7] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:55:43.559+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-10] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:55:43.575+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-5] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:55:43.577+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-3] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:55:43.579+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-6] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:55:43.582+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-4] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:55:47.471+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-1] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:56:16.571+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-8] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:56:16.571+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-9] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:56:16.589+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-2] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:56:16.589+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-10] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:56:16.589+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-7] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:56:16.602+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-5] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:56:16.603+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-3] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T17:56:16.607+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-6] c.a.services.impl.AuthServiceImpl        : Validating token
