@@ -78,6 +78,11 @@ public class AuthFilter implements GatewayFilter, Ordered {
                         if (Boolean.FALSE.equals(valid)) {
                             return onError(exchange, "Token expired or blacklisted");
                         }
+                        // ================= COMMON AUTHENTICATED ACCESS =================
+                        if (method.equals("GET") && path.matches("^/api/users/\\d+$")) {
+                            log.info("Common authenticated access granted for GET user by id");
+                            return chain.filter(addHeaders(exchange, username, role, department));
+                        }
 
                         // ================= ADMIN / SYSTEM =================
                         if ("ADMIN".equals(role) || "SYSTEM".equals(role)) {

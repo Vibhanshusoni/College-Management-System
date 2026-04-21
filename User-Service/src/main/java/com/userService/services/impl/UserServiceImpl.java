@@ -25,11 +25,12 @@ import java.lang.IllegalArgumentException;
 import java.time.LocalDateTime;
 import java.util.List;
 
+import static org.hibernate.Hibernate.map;
+
 
 @Service
 @RequiredArgsConstructor
 @Slf4j
-@Transactional(rollbackFor = Exception.class)
 public class UserServiceImpl implements UserService {
 
     private final UserRepository userRepository;
@@ -46,11 +47,9 @@ public class UserServiceImpl implements UserService {
     // CREATE USER
     // =========================================================
     @Override
-    @Transactional(rollbackFor = Exception.class)
     public UserDto createUser(UserDto dto, String createdBy, String role) {
 
         validate(dto);
-        log.info("Creating user {}", dto.getEmail());
 
         if (!"ADMIN".equals(role) && !"SYSTEM".equals(role)) {
             throw new ForbiddenException("Only ADMIN can create users");
@@ -60,14 +59,31 @@ public class UserServiceImpl implements UserService {
             throw new DuplicateResourceException("Email already exists");
         }
 
-        // SAVE USER
+        // DB SAVE (TRANSACTION)
+        UserEntity saved = saveUserTransactional(dto, createdBy);
+
+        //  CASCADE (OUTSIDE TRANSACTION)
+        try {
+            cascadeCreate(saved);
+        } catch (Exception e) {
+            log.error("Cascade failed for user {}", saved.getUniversityId(), e);
+            // optional: retry / compensation
+        }
+
+        return modelMapper.map(saved, UserDto.class);
+    }
+
+    // ================= DB TRANSACTION METHOD =================
+    @Transactional
+    public UserEntity saveUserTransactional(UserDto dto, String createdBy) {
+
         UserEntity user = modelMapper.map(dto, UserEntity.class);
         user.setPassword(passwordEncoder.encode(dto.getPassword()));
         user.setCreatedBy(createdBy);
         user.setActive(true);
+
         UserEntity saved = userRepository.save(user);
 
-        // GENERATE UNIVERSITY ID
         String prefix = switch (dto.getRole().toUpperCase()) {
             case "STUDENT" -> "STU";
             case "FACULTY" -> "FAC";
@@ -79,14 +95,7 @@ public class UserServiceImpl implements UserService {
         String universityId = prefix + String.format("%06d", saved.getId());
         saved.setUniversityId(universityId);
 
-        userRepository.save(saved);
-
-        // CASCADE CALL (IMPORTANT)
-//        cascadeCreate(saved);
-//
-//        log.info("User created successfully with universityId {}", universityId);
-
-        return modelMapper.map(saved, UserDto.class);
+        return userRepository.save(saved);
     }
 
     // =========================================================
@@ -432,34 +441,34 @@ public class UserServiceImpl implements UserService {
         try {
             switch (user.getRole()) {
 
-                case STUDENT -> {
-                    log.info("Cascading STUDENT creation for universityId: {}", user.getUniversityId());
-
-                    StudentDTO dto = StudentDTO.builder()
-                            .studentName(user.getUsername())
-                            .studentEmail(user.getEmail())
-                            .studentPhoneNumber(user.getPhoneNumber())
-                            .universityId(user.getUniversityId())   // SAME ID
-                            .semester(user.getSemester() != null ? user.getSemester() : "1")
-                            .batch(user.getBatch() != null ? user.getBatch() : "2024")
-                            .department(user.getDepartment())
-                            .course(user.getCourseCode() != null ? user.getCourseCode() : "UNKNOWN")
-                            .courseCode(user.getCourseCode())
-                            .active(true)
-                            .build();
-
-                    ResponseEntity<StudentDTO> res = studentServiceClient.createStudentFromUser(dto);
-
-                    if (res != null && res.getStatusCode().is2xxSuccessful() && res.getBody() != null) {
-                        // Store the cascade mapping
-                        user.setStudentServiceUniversityId(user.getUniversityId());
-                        log.info(" Student created in Student-Service with ID: {}", user.getUniversityId());
-                    } else {
-                        log.error(" Student-Service returned unsuccessful response");
-                        throw new RuntimeException("Student service failed - received status: " +
-                                (res != null ? res.getStatusCode() : "null"));
-                    }
-                }
+//                case STUDENT -> {
+//                    log.info("Cascading STUDENT creation for universityId: {}", user.getUniversityId());
+//
+//                    StudentDTO dto = StudentDTO.builder()
+//                            .studentName(user.getUsername())
+//                            .studentEmail(user.getEmail())
+//                            .studentPhoneNumber(user.getPhoneNumber())
+//                            .universityId(user.getUniversityId())   // SAME ID
+//                            .semester(user.getSemester() != null ? user.getSemester() : "1")
+//                            .batch(user.getBatch() != null ? user.getBatch() : "2024")
+//                            .department(user.getDepartment())
+//                            .course(user.getCourseCode() != null ? user.getCourseCode() : "UNKNOWN")
+//                            .courseCode(user.getCourseCode())
+//                            .active(true)
+//                            .build();
+//
+//                    ResponseEntity<StudentDTO> res = studentServiceClient.createStudentFromUser(dto);
+//
+//                    if (res != null && res.getStatusCode().is2xxSuccessful() && res.getBody() != null) {
+//                        // Store the cascade mapping
+//                        user.setStudentServiceUniversityId(user.getUniversityId());
+//                        log.info(" Student created in Student-Service with ID: {}", user.getUniversityId());
+//                    } else {
+//                        log.error(" Student-Service returned unsuccessful response");
+//                        throw new RuntimeException("Student service failed - received status: " +
+//                                (res != null ? res.getStatusCode() : "null"));
+//                    }
+//                }
 
                 case FACULTY -> {
                     log.info("Cascading FACULTY creation for universityId: {}", user.getUniversityId());

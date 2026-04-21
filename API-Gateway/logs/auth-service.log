@@ -1936,3 +1936,4 @@ org.springframework.web.client.HttpClientErrorException$BadRequest: 400  on POST
 2026-04-21T16:43:48.896+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-9] c.a.services.impl.AuthServiceImpl        : Validating token
 2026-04-21T16:43:52.149+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-5] c.a.services.impl.AuthServiceImpl        : Validating token
 2026-04-21T16:43:52.159+05:30  INFO 19956 --- [Auth-Service] [http-nio-8083-exec-10] c.a.services.impl.AuthServiceImpl        : Validating token
+2026-04-21T16:45:17.472+05:30  INFO 19956 --- [Auth-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
