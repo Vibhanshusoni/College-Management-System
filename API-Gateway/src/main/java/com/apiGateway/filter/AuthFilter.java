@@ -28,6 +28,7 @@ public class AuthFilter implements GatewayFilter, Ordered {
     private final JwtUtil jwtUtil;
     private final WebClient.Builder webClientBuilder;
 
+
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
 
@@ -58,12 +59,13 @@ public class AuthFilter implements GatewayFilter, Ordered {
         if (header == null || !header.startsWith("Bearer ")) {
             return onError(exchange, "Missing or Invalid Token");
         }
-
         String token = header.substring(7);
+
 
         try {
             String username = jwtUtil.extractUsername(token);
             String role = jwtUtil.extractRole(token);
+            String universityId = jwtUtil.extractUniversityId(token);
             String department = jwtUtil.extractDepartment(token);
 
             log.info("User: {}, Role: {}", username, role);
@@ -81,12 +83,12 @@ public class AuthFilter implements GatewayFilter, Ordered {
                         // ================= COMMON AUTHENTICATED ACCESS =================
                         if (method.equals("GET") && path.matches("^/api/users/\\d+$")) {
                             log.info("Common authenticated access granted for GET user by id");
-                            return chain.filter(addHeaders(exchange, username, role, department));
+                            return chain.filter(addHeaders(exchange, username, role, department, universityId));
                         }
 
                         // ================= ADMIN / SYSTEM =================
                         if ("ADMIN".equals(role) || "SYSTEM".equals(role)) {
-                            return chain.filter(addHeaders(exchange, username, role, department));
+                            return chain.filter(addHeaders(exchange, username, role, department, universityId));
                         }
 
                         // ================= STUDENT =================
@@ -96,7 +98,9 @@ public class AuthFilter implements GatewayFilter, Ordered {
                                     path.startsWith("/api/student") ||
                                     path.startsWith("/api/library") ||
                                     path.startsWith("/api/dashboard/student") ||
-                                    path.startsWith("/api/attendance/student")||
+                                    path.startsWith("/api/attendance/student") ||
+                                    path.startsWith("/api/dashboard") ||
+                                    path.startsWith("/api/profile") ||
                                     path.startsWith("/api/subjects")) {
                                 if ((method.equals("DELETE") || method.equals("PUT"))
                                         && path.startsWith("/api/subjects")) {
@@ -108,7 +112,7 @@ public class AuthFilter implements GatewayFilter, Ordered {
                                     return onError(exchange, "Students can only view library data");
                                 }
 
-                                return chain.filter(addHeaders(exchange, username, role, department));
+                                return chain.filter(addHeaders(exchange, username, role, department, universityId));
                             }
 
                             return onError(exchange, "Access Denied");
@@ -122,9 +126,12 @@ public class AuthFilter implements GatewayFilter, Ordered {
                                     path.startsWith("/api/courses") ||
                                     path.startsWith("/api/attendance") ||
                                     path.startsWith("/api/dashboard/faculty") ||
-                                    path.startsWith("/api/library")) {
+                                    path.startsWith("/api/dashboard") ||
+                                    path.startsWith("/api/profile") ||
+                                    path.startsWith("/api/library") ||
+                                    path.startsWith("/api/subjects")) {
 
-                                return chain.filter(addHeaders(exchange, username, role, department));
+                                return chain.filter(addHeaders(exchange, username, role, department, universityId));
                             }
 
                             return onError(exchange, "Access Denied");
@@ -134,9 +141,11 @@ public class AuthFilter implements GatewayFilter, Ordered {
                         if ("LIBRARIAN".equals(role)) {
 
                             if (path.startsWith("/api/library") ||
-                                    path.startsWith("/api/dashboard/library")) {
+                                    path.startsWith("/api/dashboard/library") ||
+                                    path.startsWith("/api/dashboard") ||
+                                    path.startsWith("/api/profile")) {
 
-                                return chain.filter(addHeaders(exchange, username, role, department));
+                                return chain.filter(addHeaders(exchange, username, role, department, universityId));
                             }
 
                             return onError(exchange, "Access Denied");
@@ -170,16 +179,19 @@ public class AuthFilter implements GatewayFilter, Ordered {
     private ServerWebExchange addHeaders(ServerWebExchange exchange,
                                          String username,
                                          String role,
-                                         String department) {
+                                         String department,
+                                         String universityId) {
 
         ServerHttpRequest request = exchange.getRequest().mutate()
                 .header("X-User-Name", username)
                 .header("X-User-Role", role)
                 .header("X-User-Department", department != null ? department : "")
+                .header("X-University-Id", universityId != null ? universityId : "")
                 .build();
 
         return exchange.mutate().request(request).build();
     }
+
     @Bean
     public RequestInterceptor interceptor() {
         return template -> {

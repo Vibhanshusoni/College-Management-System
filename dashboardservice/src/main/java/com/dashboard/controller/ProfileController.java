@@ -21,8 +21,7 @@ public class ProfileController {
     public ResponseEntity<Map<String, Object>> getMyProfile(
             @RequestHeader("X-User-Name") String username,
             @RequestHeader("X-User-Role") String role,
-            @RequestHeader String universityId) {
-
+            @RequestHeader("X-University-Id") String universityId) {
         return ResponseEntity.ok(profileService.getMyProfile(username, role,universityId));
     }
 }

@@ -28,6 +28,17 @@ public class LibraryController {
                 .body(libraryService.createLibrarian(librarianDTO));
     }
 
+    @PutMapping("/librarian/{universityId}")
+    public ResponseEntity<ApiResponse> updateLibrarian(
+            @PathVariable String universityId, @RequestBody LibrarianDTO dto) {
+        return ResponseEntity.ok(libraryService.updateLibrarian(universityId, dto));
+    }
+
+    @DeleteMapping("/librarian/{universityId}")
+    public ResponseEntity<ApiResponse> deleteLibrarian(@PathVariable String universityId) {
+        return ResponseEntity.ok(libraryService.deleteLibrarian(universityId));
+    }
+
     @GetMapping("/librarian/{id}")
     public ResponseEntity<ApiResponse> getLibrarian(@PathVariable Long id) {
         return ResponseEntity.ok(libraryService.getLibrarian(id));

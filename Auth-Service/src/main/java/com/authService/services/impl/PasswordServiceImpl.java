@@ -247,8 +247,8 @@ public class PasswordServiceImpl implements PasswordService {
         dto.setNewPassword(request.getNewPassword());
         try{
         log.info(" Calling User-Service to reset password for: {}", user.getUsername());
-        restTemplate.postForObject(
-                "http://USER-SERVICE/api/users/internal/reset-password",
+            restTemplate.put(
+                    "http://USER-SERVICE/api/users/internal/reset-password",
                 dto,
                 String.class
         );} catch (Exception e) {
@@ -262,8 +262,6 @@ public class PasswordServiceImpl implements PasswordService {
         otp.setExpiryTime(LocalDateTime.now());
         otpRepo.save(otp);
 
-        otp.setExpiryTime(LocalDateTime.now());
-        otpRepo.save(otp);
         log.info(" Password reset completed for: {}", user.getEmail());
         return ApiResponse.builder()
                 .timestamp(LocalDateTime.now())

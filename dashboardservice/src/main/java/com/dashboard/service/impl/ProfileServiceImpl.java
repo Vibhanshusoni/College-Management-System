@@ -3,9 +3,11 @@ package com.dashboard.service.impl;
 import com.dashboard.clients.FacultyServiceClient;
 import com.dashboard.clients.StudentServiceClient;
 import com.dashboard.clients.UserServiceClient;
+import com.dashboard.dto.ApiResponse;
 import com.dashboard.service.ProfileService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
@@ -32,8 +34,8 @@ public class ProfileServiceImpl implements ProfileService {
 
             if ("STUDENT".equalsIgnoreCase(role)) {
 
-                Map<String, Object> student =
-                        userClient.getUserByUsername(username);
+                ResponseEntity<ApiResponse> student =
+                        userClient.lookupUserByUsername(username);
 
 
                 response.put("role", "STUDENT");
@@ -41,8 +43,8 @@ public class ProfileServiceImpl implements ProfileService {
 
             } else if ("FACULTY".equalsIgnoreCase(role)) {
 
-                Map<String, Object> user =
-                        userClient.getUserByUsername(username);
+                ResponseEntity<ApiResponse> user =
+                        userClient.lookupUserByUsername(username);
 
 
                 response.put("role", "FACULTY");
@@ -52,7 +54,7 @@ public class ProfileServiceImpl implements ProfileService {
                     "ADMIN".equalsIgnoreCase(role)) {
 
                 response.put("role", role);
-                response.put("data", userClient.getUserByUsername(username));
+                response.put("data", userClient.lookupUserByUsername(username));
             }
 
         } catch (Exception e) {

@@ -1,5 +1,6 @@
 package com.userService.client;
 
+import com.userService.dto.ApiResponse;
 import com.userService.dto.StudentDTO;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.ResponseEntity;
@@ -26,4 +27,7 @@ public interface StudentServiceClient {
             @PathVariable String universityId,
             @RequestBody StudentDTO dto
     );
+
+    @GetMapping("/university-id/{universityId}")
+     ResponseEntity<ApiResponse> getStudentByUniversityId(@PathVariable String universityId);
 }

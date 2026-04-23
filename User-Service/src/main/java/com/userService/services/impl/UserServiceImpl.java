@@ -81,10 +81,9 @@ public class UserServiceImpl implements UserService {
 
         userRepository.save(saved);
 
-        // CASCADE CALL (IMPORTANT)
-//        cascadeCreate(saved);
-//
-//        log.info("User created successfully with universityId {}", universityId);
+        // CASCADE CALL
+       cascadeCreate(saved);
+       log.info("User created successfully with universityId {}", universityId);
 
         return modelMapper.map(saved, UserDto.class);
     }
@@ -435,6 +434,25 @@ public class UserServiceImpl implements UserService {
                 case STUDENT -> {
                     log.info("Cascading STUDENT creation for universityId: {}", user.getUniversityId());
 
+                    // Check if student already exists
+                    try {
+                        ResponseEntity<ApiResponse> existing =
+                                studentServiceClient.getStudentByUniversityId(user.getUniversityId());
+
+                        if (existing != null && existing.getStatusCode().is2xxSuccessful() && existing.getBody() != null) {
+                            log.info("[CASCADE_CREATE] Student already exists in Student-Service, skipping cascade");
+
+                            // Just map ID and return
+                            user.setStudentServiceUniversityId(user.getUniversityId());
+                            userRepository.save(user);
+                            return;
+                        }
+
+                    } catch (Exception ex) {
+                        log.warn("[CASCADE_CREATE] Student not found in Student-Service, proceeding with creation");
+                    }
+
+                    // Create student (only if not exists)
                     StudentDTO dto = StudentDTO.builder()
                             .studentName(user.getUsername())
                             .studentEmail(user.getEmail())
@@ -451,7 +469,6 @@ public class UserServiceImpl implements UserService {
                     ResponseEntity<StudentDTO> res = studentServiceClient.createStudentFromUser(dto);
 
                     if (res != null && res.getStatusCode().is2xxSuccessful() && res.getBody() != null) {
-                        // Store the cascade mapping
                         user.setStudentServiceUniversityId(user.getUniversityId());
                         log.info(" Student created in Student-Service with ID: {}", user.getUniversityId());
                     } else {
@@ -532,10 +549,7 @@ public class UserServiceImpl implements UserService {
             switch (user.getRole()) {
 
                 case STUDENT -> {
-                    // Check if student exists in Student-Service
-                    if (user.getStudentServiceUniversityId() != null &&
-                            !user.getStudentServiceUniversityId().isEmpty()) {
-
+                    try {
                         StudentDTO dto = StudentDTO.builder()
                                 .studentName(user.getUsername())
                                 .studentEmail(user.getEmail())
@@ -547,16 +561,17 @@ public class UserServiceImpl implements UserService {
                                 .build();
 
                         studentServiceClient.updateStudent(user.getUniversityId(), dto);
-                        log.info(" Student updated in Student-Service: {}", user.getUniversityId());
-                    } else {
-                        log.warn(" Student not linked to Student-Service, skipping cascade update");
+
+                        log.info("[CASCADE_UPDATE] Student updated: {}", user.getUniversityId());
+
+                    } catch (Exception e) {
+                        log.warn("[CASCADE_UPDATE] Student update failed (non-critical) for: {}",
+                                user.getUniversityId(), e);
                     }
                 }
 
                 case FACULTY -> {
-                    if (user.getFacultyServiceUniversityId() != null &&
-                            !user.getFacultyServiceUniversityId().isEmpty()) {
-
+                    try {
                         FacultyDTO dto = FacultyDTO.builder()
                                 .facultyName(user.getUsername())
                                 .facultyEmail(user.getEmail())
@@ -569,16 +584,17 @@ public class UserServiceImpl implements UserService {
                                 .build();
 
                         facultyServiceClient.updateFaculty(user.getUniversityId(), dto);
-                        log.info(" Faculty updated in Faculty-Service: {}", user.getUniversityId());
-                    } else {
-                        log.warn(" Faculty not linked to Faculty-Service, skipping cascade update");
+
+                        log.info("[CASCADE_UPDATE] Faculty updated: {}", user.getUniversityId());
+
+                    } catch (Exception e) {
+                        log.warn("[CASCADE_UPDATE] Faculty update failed (non-critical) for: {}",
+                                user.getUniversityId(), e);
                     }
                 }
 
                 case LIBRARIAN -> {
-                    if (user.getLibrarianServiceUniversityId() != null &&
-                            !user.getLibrarianServiceUniversityId().isEmpty()) {
-
+                    try {
                         LibrarianDTO dto = LibrarianDTO.builder()
                                 .librarianName(user.getUsername())
                                 .librarianEmail(user.getEmail())
@@ -586,23 +602,25 @@ public class UserServiceImpl implements UserService {
                                 .build();
 
                         libraryServiceClient.updateLibrarian(user.getUniversityId(), dto);
-                        log.info(" Librarian updated in Library-Service: {}", user.getUniversityId());
-                    } else {
-                        log.warn(" Librarian not linked to Library-Service, skipping cascade update");
+
+                        log.info("[CASCADE_UPDATE] Librarian updated: {}", user.getUniversityId());
+
+                    } catch (Exception e) {
+                        log.warn("[CASCADE_UPDATE] Librarian update failed (non-critical) for: {}",
+                                user.getUniversityId(), e);
                     }
                 }
 
                 case ADMIN -> {
-                    log.info("ADMIN - no cascade update required");
+                    log.info("[CASCADE_UPDATE] ADMIN - no cascade required");
                 }
             }
 
         } catch (Exception e) {
-            log.error(" CASCADE UPDATE FAILED for user: {}", user.getUniversityId(), e);
+            log.error("[CASCADE_UPDATE] Unexpected failure for user: {}", user.getUniversityId(), e);
             throw new RuntimeException("Update sync failed: " + e.getMessage(), e);
         }
     }
-
     // =========================================================
 // CASCADE DELETE - FIXED VERSION
 // =========================================================

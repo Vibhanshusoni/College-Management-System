@@ -56,4 +56,8 @@ public interface LibraryService {
     ApiResponse updateReturnableDate(Long issueId, String returnableDate);
 
     ApiResponse getIssueRecordsByRole(String role, String action);
+
+    ApiResponse updateLibrarian(String universityId, LibrarianDTO dto);
+
+    ApiResponse deleteLibrarian(String universityId);
 }

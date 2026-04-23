@@ -11,6 +11,7 @@ import com.library.entity.BookEntity;
 import com.library.entity.BookIssueEntity;
 import com.library.entity.LibrarianEntity;
 import com.library.enums.IssueStatus;
+import com.library.exception.AccessDeniedException;
 import com.library.exception.ResourceNotFoundException;
 import com.library.repository.BookIssueRepository;
 import com.library.repository.BookRepository;
@@ -144,7 +145,8 @@ public class LibraryServiceImpl implements LibraryService {
                     .toList();
         }
 
-        List<BookDTO> list = modelMapper.map(books, new TypeToken<List<BookDTO>>() {}.getType());
+        List<BookDTO> list = modelMapper.map(books, new TypeToken<List<BookDTO>>() {
+        }.getType());
 
         return new ApiResponse("Books fetched", 200, list, LocalDateTime.now());
     }
@@ -161,7 +163,8 @@ public class LibraryServiceImpl implements LibraryService {
         return new ApiResponse(
                 "User books",
                 200,
-                modelMapper.map(list, new TypeToken<List<BookIssueDTO>>() {}.getType()),
+                modelMapper.map(list, new TypeToken<List<BookIssueDTO>>() {
+                }.getType()),
                 LocalDateTime.now()
         );
     }
@@ -273,6 +276,7 @@ public class LibraryServiceImpl implements LibraryService {
         if (dto == null) {
             throw new IllegalArgumentException("Request body cannot be null");
         }
+
         if (dto.getUserId() == null || dto.getUserId().isBlank()) {
             throw new IllegalArgumentException("User ID is required");
         }
@@ -282,7 +286,9 @@ public class LibraryServiceImpl implements LibraryService {
 
         String userId = dto.getUserId().trim();
         String bookId = dto.getBookId().trim();
-
+        if (userId.startsWith("ADM") || userId.startsWith("LIB")) {
+            throw new AccessDeniedException("Admin or Librarian cannot issue a book to themselves");
+        }
         long activeCount = bookIssueRepository.countByUserIdAndStatus(userId, IssueStatus.ISSUED);
         if (activeCount >= 6) {
             throw new IllegalArgumentException("Max 6 books allowed");
@@ -581,6 +587,7 @@ public class LibraryServiceImpl implements LibraryService {
             return new ApiResponse("User service down", 500, null, LocalDateTime.now());
         }
     }
+
     @Transactional(readOnly = true)
     @Override
     public ApiResponse getAllIssueRecords() {
@@ -688,6 +695,7 @@ public class LibraryServiceImpl implements LibraryService {
 
         return new ApiResponse("Weekly circulation fetched", 200, result, LocalDateTime.now());
     }
+
     @Override
     @Transactional(readOnly = true)
     public ApiResponse getIssueRecordsByRole(String role, String action) {
@@ -732,6 +740,51 @@ public class LibraryServiceImpl implements LibraryService {
 
         return new ApiResponse("Role wise issue records fetched", 200, result, LocalDateTime.now());
     }
+
+    @Override
+    public ApiResponse updateLibrarian(String universityId, LibrarianDTO dto) {
+
+        LibrarianEntity librarian = librarianRepository.findByUniversityId(universityId)
+                .orElseThrow(() -> new RuntimeException("Librarian not found with universityId: " + universityId));
+
+        // Update fields (only if not null)
+        if (dto.getLibrarianName() != null) {
+            librarian.setLibrarianName(dto.getLibrarianName());
+        }
+
+        if (dto.getLibrarianEmail() != null) {
+            librarian.setLibrarianEmail(dto.getLibrarianEmail());
+        }
+
+        if (dto.getLibrarianPhoneNumber() != null) {
+            librarian.setLibrarianPhoneNumber(dto.getLibrarianPhoneNumber());
+        }
+
+        LibrarianEntity updated = librarianRepository.save(librarian);
+
+        return ApiResponse.builder()
+                .status(200)
+                .message("Librarian updated successfully")
+                .data(updated)
+                .build();
+    }
+
+    @Override
+    public ApiResponse deleteLibrarian(String universityId) {
+
+        LibrarianEntity librarian = librarianRepository.findByUniversityId(universityId)
+                .orElseThrow(() -> new RuntimeException("Librarian not found with universityId: " + universityId));
+
+        // Soft delete
+        librarian.setActive(false);
+        librarianRepository.save(librarian);
+
+        return ApiResponse.builder()
+                .status(200)
+                .message("Librarian deleted successfully (soft delete)")
+                .build();
+    }
+
     @Override
     @Transactional(readOnly = true)
     public ApiResponse getTodayActivity() {

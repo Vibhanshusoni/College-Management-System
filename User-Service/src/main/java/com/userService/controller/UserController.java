@@ -4,12 +4,16 @@ import com.userService.dto.ApiResponse;
 import com.userService.dto.LoginRequest;
 import com.userService.dto.UpdatePasswordDto;
 import com.userService.dto.UserDto;
+import com.userService.entity.UserEntity;
 import com.userService.exception.ForbiddenException;
+import com.userService.exception.ResourceNotFoundException;
+import com.userService.repository.UserRepository;
 import com.userService.services.UserService;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.modelmapper.ModelMapper;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -26,7 +30,8 @@ import java.util.Map;
 public class UserController {
 
     private final UserService userService;
-
+    private final UserRepository userRepository;
+    private final ModelMapper modelMapper;
 
     @PutMapping("/university/{universityId}/password")
     public ResponseEntity<ApiResponse> updatePasswordByUniversityId(
@@ -211,6 +216,15 @@ public class UserController {
                         .data(user)
                         .build()
         );
+    }
+
+
+    @GetMapping("/internal/by-username")
+    public ResponseEntity<ApiResponse> lookupUserByUsername(@RequestParam String username) {
+        UserEntity user = userRepository.findByUsername(username)
+                .orElseThrow(() -> new ResourceNotFoundException("User not found: " + username));
+        return ResponseEntity.ok(ApiResponse.builder()
+                .status(200).message("User fetched").data(modelMapper.map(user, UserDto.class)).build());
     }
 
     // ================= DELETE USER =================
