@@ -274,30 +274,32 @@ public class LibraryServiceImpl implements LibraryService {
     @Override
     public ApiResponse issueBook(BookIssueDTO dto) {
         if (dto == null) {
-            throw new IllegalArgumentException("Request body cannot be null");
+            throw new IllegalArgumentException("✗ Request body cannot be null");
         }
 
         if (dto.getUserId() == null || dto.getUserId().isBlank()) {
-            throw new IllegalArgumentException("User ID is required");
+            throw new IllegalArgumentException("✗ User ID is required");
         }
         if (dto.getBookId() == null || dto.getBookId().isBlank()) {
-            throw new IllegalArgumentException("Book ID is required");
+            throw new IllegalArgumentException("✗ Book ID is required");
         }
 
         String userId = dto.getUserId().trim();
         String bookId = dto.getBookId().trim();
+
         if (userId.startsWith("ADM") || userId.startsWith("LIB")) {
-            throw new AccessDeniedException("Admin or Librarian cannot issue a book to themselves");
+            throw new AccessDeniedException("✗ Admin or Librarian cannot issue a book to themselves");
         }
+
         long activeCount = bookIssueRepository.countByUserIdAndStatus(userId, IssueStatus.ISSUED);
         if (activeCount >= 6) {
-            throw new IllegalArgumentException("Max 6 books allowed");
+            throw new IllegalArgumentException("✗ Max 6 books allowed");
         }
 
         BookEntity book = libraryValidation.validateBookExists(bookId);
 
         if (book.getAvailableCount() <= 0) {
-            throw new IllegalArgumentException("Book not available");
+            throw new IllegalArgumentException("✗ Book not available");
         }
 
         BookIssueEntity issue = new BookIssueEntity();
@@ -310,7 +312,7 @@ public class LibraryServiceImpl implements LibraryService {
             ResponseEntity<ApiResponse> studentResponse = studentClient.getStudentByUniversityId(userId);
 
             if (studentResponse == null || studentResponse.getBody() == null || studentResponse.getBody().getData() == null) {
-                throw new ResourceNotFoundException("Student not found for university id: " + userId);
+                throw new ResourceNotFoundException("✗ Student not found for university id: " + userId);
             }
 
             Map<String, Object> studentData = (Map<String, Object>) studentResponse.getBody().getData();
@@ -325,7 +327,7 @@ public class LibraryServiceImpl implements LibraryService {
             ResponseEntity<ApiResponse> facultyResponse = facultyClient.getFacultyByFacultyUniversityId(userId);
 
             if (facultyResponse == null || facultyResponse.getBody() == null || facultyResponse.getBody().getData() == null) {
-                throw new ResourceNotFoundException("Faculty not found for university id: " + userId);
+                throw new ResourceNotFoundException("✗ Faculty not found for university id: " + userId);
             }
 
             Map<String, Object> facultyData = (Map<String, Object>) facultyResponse.getBody().getData();
@@ -337,7 +339,7 @@ public class LibraryServiceImpl implements LibraryService {
             issue.setCourse(null);
 
         } else {
-            throw new IllegalArgumentException("Invalid userId format");
+            throw new IllegalArgumentException("✗ Invalid userId format");
         }
 
         issue.setIssueDate(LocalDate.now());
@@ -352,12 +354,24 @@ public class LibraryServiceImpl implements LibraryService {
         bookRepository.save(book);
         BookIssueEntity saved = bookIssueRepository.save(issue);
 
+        // SYNC WITH STUDENT/FACULTY SERVICE
         if (userId.startsWith("STU")) {
-            studentClient.updateStudentBooks(userId, 1, 0);
+            try {
+                studentClient.updateStudentBooks(userId, 1, 0);
+                log.info("✓ Student book stats synced: {}", userId);
+            } catch (Exception e) {
+                log.warn("⚠ Student sync failed (non-critical): {}", e.getMessage());
+            }
         } else if (userId.startsWith("FAC")) {
-            facultyClient.updateBookStatsByFacultyUniversityId(userId, 1, 0);
+            try {
+                facultyClient.updateBookStatsByFacultyUniversityId(userId, 1, 0);
+                log.info("✓ Faculty book stats synced: {}", userId);
+            } catch (Exception e) {
+                log.warn("⚠ Faculty sync failed (non-critical): {}", e.getMessage());
+            }
         }
-        return new ApiResponse("Book issued successfully", 201, saved, LocalDateTime.now());
+
+        return new ApiResponse("✓ Book issued successfully", 201, saved, LocalDateTime.now());
     }
 
     @Override
@@ -365,13 +379,13 @@ public class LibraryServiceImpl implements LibraryService {
         BookIssueEntity issue = libraryValidation.validateIssueRecordExists(issueId);
 
         if (issue.getStatus() == IssueStatus.RETURNED) {
-            throw new IllegalArgumentException("Book already returned");
+            throw new IllegalArgumentException("✗ Book already returned");
         }
 
         BookEntity book = libraryValidation.validateBookExists(issue.getBookId());
 
         if (book.getIssuedCount() <= 0) {
-            throw new IllegalArgumentException("Invalid return operation");
+            throw new IllegalArgumentException("✗ Invalid return operation");
         }
 
         issue.setStatus(IssueStatus.RETURNED);
@@ -386,13 +400,24 @@ public class LibraryServiceImpl implements LibraryService {
 
         String userId = issue.getUserId();
 
+        // SYNC WITH STUDENT/FACULTY SERVICE
         if (userId != null && userId.startsWith("STU")) {
-            studentClient.updateStudentBooks(userId, 0, 1);
+            try {
+                studentClient.updateStudentBooks(userId, 0, 1);
+                log.info("✓ Student return synced: {}", userId);
+            } catch (Exception e) {
+                log.warn("⚠ Student return sync failed (non-critical): {}", e.getMessage());
+            }
         } else if (userId != null && userId.startsWith("FAC")) {
-            facultyClient.updateBookStatsByFacultyUniversityId(userId, 0, 1);
+            try {
+                facultyClient.updateBookStatsByFacultyUniversityId(userId, 0, 1);
+                log.info("✓ Faculty return synced: {}", userId);
+            } catch (Exception e) {
+                log.warn("⚠ Faculty return sync failed (non-critical): {}", e.getMessage());
+            }
         }
 
-        return new ApiResponse("Book returned successfully", 200, updated, LocalDateTime.now());
+        return new ApiResponse("✓ Book returned successfully", 200, updated, LocalDateTime.now());
     }
 
     @Override
@@ -745,9 +770,8 @@ public class LibraryServiceImpl implements LibraryService {
     public ApiResponse updateLibrarian(String universityId, LibrarianDTO dto) {
 
         LibrarianEntity librarian = librarianRepository.findByUniversityId(universityId)
-                .orElseThrow(() -> new RuntimeException("Librarian not found with universityId: " + universityId));
+                .orElseThrow(() -> new RuntimeException("✗ Librarian not found with universityId: " + universityId));
 
-        // Update fields (only if not null)
         if (dto.getLibrarianName() != null) {
             librarian.setLibrarianName(dto.getLibrarianName());
         }
@@ -762,12 +786,15 @@ public class LibraryServiceImpl implements LibraryService {
 
         LibrarianEntity updated = librarianRepository.save(librarian);
 
+        log.info("✓ Librarian updated: {}", universityId);
+
         return ApiResponse.builder()
                 .status(200)
-                .message("Librarian updated successfully")
+                .message("✓ Librarian updated successfully")
                 .data(updated)
                 .build();
     }
+
 
     @Override
     public ApiResponse deleteLibrarian(String universityId) {
@@ -831,6 +858,7 @@ public class LibraryServiceImpl implements LibraryService {
         return row;
     }
 
+
     @Override
     @Transactional(readOnly = true)
     public ApiResponse getLibraryDashboard() {
@@ -839,8 +867,9 @@ public class LibraryServiceImpl implements LibraryService {
         data.put("availableCopies", bookRepository.findAll().stream().mapToInt(BookEntity::getAvailableCount).sum());
         data.put("issuedCopies", bookRepository.findAll().stream().mapToInt(BookEntity::getIssuedCount).sum());
         data.put("libraryMembers", bookIssueRepository.countDistinctUserId());
+        data.put("overdueBooks", bookIssueRepository.countByReturnedDateIsNullAndReturnableDateBefore(LocalDate.now()));
 
-        return new ApiResponse("Dashboard", 200, data, LocalDateTime.now());
+        return new ApiResponse("✓ Dashboard fetched", 200, data, LocalDateTime.now());
     }
 
     @Override

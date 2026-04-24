@@ -132,17 +132,22 @@ public class DepartmentServiceImpl implements DepartmentService {
      * Update department
      */
     @Override
+    @Transactional(rollbackFor = Exception.class)
     public ApiResponse updateDepartment(Long id, DepartmentDTO dto, String updatedBy) {
+        log.info("⬇ [CASCADE_UPDATE] Updating Department | id={}", id);
 
         DepartmentEntity department = departmentRepository.findById(id)
-                .orElseThrow(() -> new ResourceNotFoundException("Department not found"));
+                .orElseThrow(() -> new ResourceNotFoundException("✗ Department not found"));
 
-        if (dto.getDepartmentName() != null) {
-            department.setDepartmentName(dto.getDepartmentName());
+        // Update basic fields
+        if (dto.getDepartmentName() != null && !dto.getDepartmentName().isBlank()) {
+            department.setDepartmentName(dto.getDepartmentName().trim());
+            log.info("✓ Department name updated: {}", dto.getDepartmentName());
         }
 
-        if (dto.getDescription() != null) {
-            department.setDescription(dto.getDescription());
+        if (dto.getDescription() != null && !dto.getDescription().isBlank()) {
+            department.setDescription(dto.getDescription().trim());
+            log.info("✓ Department description updated");
         }
 
         department.setUpdatedBy(updatedBy);
@@ -150,8 +155,10 @@ public class DepartmentServiceImpl implements DepartmentService {
 
         DepartmentEntity updated = departmentRepository.save(department);
 
+        log.info("✓ [CASCADE_UPDATE] Department updated successfully | id={}", id);
+
         return new ApiResponse(
-                "Department updated",
+                "✓ Department updated successfully",
                 200,
                 modelMapper.map(updated, DepartmentDTO.class),
                 LocalDateTime.now()

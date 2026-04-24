@@ -36,4 +36,6 @@ public interface BookIssueRepository extends JpaRepository<BookIssueEntity, Long
     long countByUserIdAndReturnedDateIsNull(String userId);
 
     List<BookIssueEntity> findByUserRoleIgnoreCase(String trim);
+
+    Object countByReturnedDateIsNullAndReturnableDateBefore(LocalDate now);
 }
